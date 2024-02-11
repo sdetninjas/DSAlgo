@@ -9,6 +9,7 @@ public class Register {
 	@Given("The user opens Register Page")
 	public void the_user_opens_register_page() {
 		
+		
 	    
 	   
 	}

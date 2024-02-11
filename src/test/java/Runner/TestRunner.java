@@ -1,15 +1,10 @@
 package Runner;
 
 
-//package runner;
-
-import org.junit.runner.RunWith;
 import org.testng.annotations.DataProvider;
+
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
-import io.cucumber.java.Before;
-import io.cucumber.java.BeforeAll;
-import io.cucumber.junit.Cucumber;
 	
 //@RunWith(Cucumber.class) //Junit execution
 

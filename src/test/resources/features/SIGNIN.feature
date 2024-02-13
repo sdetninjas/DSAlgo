@@ -1,4 +1,4 @@
-@tag
+@tag1
 Feature: Sign In to website
 In order to login to the website
 As a user I want to give username and password to login

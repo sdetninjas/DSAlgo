@@ -1,4 +1,4 @@
-@arrayScenario
+@arrayScenario1
 Feature: Array Page 
 
 @scenario1 @TC_A_001

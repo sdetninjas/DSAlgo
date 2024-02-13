@@ -1,4 +1,4 @@
-@arrayScenario
+@arrayScenario1
 Feature: Array Page 
 
 @scenario1 @TC_A_001
@@ -267,7 +267,7 @@ Scenario:
 
 Given 
 When 
-Then
+Then 
 
 @scenario28 @TC_A_0028
 Scenario: 

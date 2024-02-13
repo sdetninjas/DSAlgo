@@ -267,7 +267,7 @@ Scenario:
 
 Given 
 When 
-Then
+Then 
 
 @scenario28 @TC_A_0028
 Scenario: 

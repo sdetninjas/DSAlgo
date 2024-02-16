@@ -23,7 +23,7 @@ public class ConfigReader {
 		
 		Properties p = new Properties();
 		try {
-			InputStream is = ConfigReader.class.getResourceAsStream("/Config/config.properties");
+			InputStream is = ConfigReader.class.getResourceAsStream("/config/config.properties");
 			p.load(is);
 		} catch (FileNotFoundException e) {
 			

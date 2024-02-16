@@ -1,4 +1,4 @@
-package AppHooks;
+package com.apphooks;
 
 import java.util.Properties;
 
@@ -6,7 +6,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-import com.DriverManager.DriverManagerFact;
+import com.drivermanager.DriverManagerFact;
 import com.utility.ConfigReader;
 
 import io.cucumber.java.After;

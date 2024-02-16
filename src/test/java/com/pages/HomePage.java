@@ -1,4 +1,4 @@
-package com.Pages;
+package com.pages;
 
 public class HomePage {
 

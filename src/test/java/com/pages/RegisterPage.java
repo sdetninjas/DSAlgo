@@ -1,9 +1,9 @@
-package com.Pages;
+package com.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-import com.DriverManager.DriverManagerFact;
+import com.drivermanager.DriverManagerFact;
 
 public class RegisterPage extends BasePage{
 	

@@ -3,7 +3,7 @@ package stepdefinition;
 
 import org.junit.Assert;
 
-import com.Pages.RegisterPage;
+import com.pages.RegisterPage;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

@@ -1,8 +1,8 @@
-package com.Pages;
+package com.pages;
 
 import org.openqa.selenium.WebDriver;
 
-import com.DriverManager.DriverManagerFact;
+import com.drivermanager.DriverManagerFact;
 import com.utility.ConfigReader;
 
 public class BasePage {

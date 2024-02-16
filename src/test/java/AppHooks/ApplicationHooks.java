@@ -11,28 +11,28 @@ import com.utility.ConfigReader;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
+import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 
 public class ApplicationHooks {
 
 	private  DriverManagerFact driverFactory;
 	private WebDriver driver;
-	private ConfigReader configReader;
 	Properties prop;
 	
 	@Before(order=0)
 	public void getProperty() {
-		configReader = new ConfigReader();
-		prop = configReader.initializeProp();
+		prop = ConfigReader.loadProperty();
 	}
 	
 	@Before(order=1)
 	public void launchBrowser() {
 		String browserName = prop.getProperty("browser");
 		driverFactory = new DriverManagerFact();
-		driverFactory.intializeDriver(browserName);
+		driver = driverFactory.intializeDriver(browserName);
 		
 	}
+	
 	@After(order=0)
 	public void quitBrowser() {
 		driver.quit();

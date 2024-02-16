@@ -1,60 +1,54 @@
 package com.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-
-import com.drivermanager.DriverManagerFact;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class RegisterPage extends BasePage{
 	
-	private WebDriver driver;
-	
-	private By usernameTxt = By.id("id_username");
-	private By pswTxt = By.id("id_password1");
-	private By confirmpswTxt = By.id("id_password2");
-	private By register = By.xpath("//input[@value='Register']");
-	
-	public RegisterPage() {
-		this.driver = DriverManagerFact.getDriver();
+	@FindBy(id="id_username") 
+	private WebElement usernameTxt;
+	@FindBy(id="id_password1") 
+	private WebElement pswTxt;
+	@FindBy(id="id_password2")
+	private WebElement confirmpswTxt;
+	@FindBy(xpath="//input[@value='Register']") 
+	private WebElement register;
 		
-	}
+	
+	
+	
 	@Override
 	public void openPage() {
 		driver.get(BASE_URL + "register");
 		
 	}
-	public String getRegisterPageTitle() {
-		return driver.getTitle();
-		
-	}
+	
 	
 	public void enterUserName(String username) {
-		driver.findElement(usernameTxt).sendKeys(username);
+		usernameTxt.sendKeys(username);
 		
 	}
 	
 	public void enterPassword(String password) {
-		driver.findElement(pswTxt).sendKeys(password);
+		pswTxt.sendKeys(password);
 		
 	}
 	
 	public void enterConfirmPassword(String Cfmpassword) {
-		driver.findElement(confirmpswTxt).sendKeys(Cfmpassword);
+		confirmpswTxt.sendKeys(Cfmpassword);
 		
 	}
 	
 	public String getUserNameValidationMessage() {
 		return getValidationMessage(usernameTxt);
 	}
-	private String getValidationMessage(By we) {
-		return driver.findElement(we).getAttribute("validationMessage");
-	}
+	
 	public String getPasswordValidationMessage() {
-		return driver.findElement(pswTxt).getAttribute("validationMessage");
+		return getValidationMessage(pswTxt);
 	}
 	
 	public void clickOnRegister() {
-		driver.findElement(register).click();
+		register.click();
 		
 	}
 	

@@ -11,7 +11,6 @@ import com.utility.ConfigReader;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import io.cucumber.java.BeforeAll;
 import io.cucumber.java.Scenario;
 
 public class ApplicationHooks {

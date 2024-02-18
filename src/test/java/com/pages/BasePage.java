@@ -41,11 +41,25 @@ public abstract class BasePage {
 			return we.getAttribute("validationMessage");
 		}
 		
+		protected void navigateBack() {
+			driver.navigate().back();
+			
+		}
+		
+		protected void getAlertText() {
+			driver.switchTo().alert().getText();
+			
+		}
+		
+		protected void acceptAlertText() {
+			driver.switchTo().alert().accept();
+			
+		}
 		protected void waitFor(long milliseconds ) {
 			try {
 				Thread.sleep(milliseconds);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+			
 				e.printStackTrace();
 				
 			}

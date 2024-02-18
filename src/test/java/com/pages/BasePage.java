@@ -15,6 +15,7 @@ public abstract class BasePage {
 		protected String BASE_URL=ConfigReader.getProperty("BASE_URL");
 		
 		public BasePage() {
+			
 			driver = DriverManagerFact.getDriver();
 			PageFactory.initElements(driver, this);
 		}

@@ -56,8 +56,8 @@ Then The user should be redirected to ""Terminologies"" page."
 
 @tag9
 Scenario: Terminologies
-Given The user is on the ""Terminologies"" page"
-When The user clicks ""Try Here"" button"	
+Given The user is on the "Terminologies" page"
+When The user clicks "Try Here" button	
 Then The user should be redirected to a page having Editor and run button
 
 @tag10

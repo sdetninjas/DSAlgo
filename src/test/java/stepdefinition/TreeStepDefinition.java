@@ -55,7 +55,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Overview of Trees\"\" page")
 	public void the_user_is_on_the_overview_of_trees_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/overview-of-trees/");
+		Assert.assertEquals("Overview of Trees",treePage.getPageTitle());
 	}
 
 	@When("The user clicks \"\"Try Here\"\" button")
@@ -116,13 +116,13 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the editor page with Alert error message")
 	public void the_user_is_on_the_editor_page_with_alert_error_message() {
-		treeSD.getAlertText();
+		treePage.getAlertText();
 	
 	}
 
 	@When("The user click the ok button in the alert window")
 	public void the_user_click_the_ok_button_in_the_alert_window() {
-		treeSD.acceptAlertText();
+		treePage.acceptAlertText();
 	}
 
 	@Then("The user is on the same page having Editor and Run button")
@@ -149,7 +149,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Terminologies\"\" page\"")
 	public void the_user_is_on_the_terminologies_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/terminologies/");
+		Assert.assertEquals("Terminologies",treePage.getPageTitle());
 	}
 
 //	@When("The user clicks \"\"Try Here\"\" button")
@@ -182,7 +182,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Types of Trees\"\" page\"")
 	public void the_user_is_on_the_types_of_trees_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/types-of-trees/");
+		Assert.assertEquals("Types of Trees",treePage.getPageTitle());
 
 	}
 
@@ -204,7 +204,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Tree Traversals\"\" page\"")
 	public void the_user_is_on_the_tree_traversals_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/tree-traversals/");
+		Assert.assertEquals("Tree Traversals",treePage.getPageTitle());
 
 	}
 
@@ -227,7 +227,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Traversals-Illustration\"\" page\"")
 	public void the_user_is_on_the_traversals_illustration_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/traversals-illustration/");
+		Assert.assertEquals("Traversals-Illustration",treePage.getPageTitle());
 
 	}
 
@@ -244,7 +244,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Binary Trees\"\" page\"")
 	public void the_user_is_on_the_binary_trees_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/binary-trees/");
+		Assert.assertEquals("Binary Trees",treePage.getPageTitle());
 
 	}
 
@@ -261,7 +261,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Types of Binary Trees\"\" page\"")
 	public void the_user_is_on_the_types_of_binary_trees_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/types-of-binary-trees/");
+		Assert.assertEquals("Types of Binary Trees",treePage.getPageTitle());
 
 	}
 
@@ -278,7 +278,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Implementation in Python\"\" page\"")
 	public void the_user_is_on_the_implementation_in_python_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/implementation-in-python/");
+		Assert.assertEquals("Implementation in Python",treePage.getPageTitle());
 
 	}
 
@@ -295,7 +295,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Binary Tree Traversals\"\" page\"")
 	public void the_user_is_on_the_binary_tree_traversals_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/binary-tree-traversals/");
+		Assert.assertEquals("Binary Tree Traversals",treePage.getPageTitle());
 
 	}
 
@@ -312,7 +312,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Implementation of Binary Trees\"\" page\"")
 	public void the_user_is_on_the_implementation_of_binary_trees_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/implementation-of-binary-trees/");
+		Assert.assertEquals("Implementation of Binary Trees",treePage.getPageTitle());
 
 	}
 
@@ -329,7 +329,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Applications of Binary trees\"\" page\"")
 	public void the_user_is_on_the_applications_of_binary_trees_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/applications-of-binary-trees/");
+		Assert.assertEquals("Applications of Binary trees",treePage.getPageTitle());
 
 	}
 	
@@ -352,7 +352,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Binary Search Trees\"\" page\"")
 	public void the_user_is_on_the_binary_search_trees_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/binary-search-trees/");
+		Assert.assertEquals("Binary Search Trees",treePage.getPageTitle());
 
 	}
 
@@ -369,7 +369,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Implementation Of BST\"\" page\"")
 	public void the_user_is_on_the_implementation_of_bst_page() {
-		driver.get("https://dsportalapp.herokuapp.com/tree/implementation-of-bst/");
+		Assert.assertEquals("Implementation Of BST",treePage.getPageTitle());
 
 	}
 
@@ -384,11 +384,11 @@ public class TreeStepDefinition  {
 
 	}
 
-	@Override
-	public void openPage() {
-		// TODO Auto-generated method stub
-		
-	}
+//	@Override
+//	public void openPage() {
+//		// TODO Auto-generated method stub
+//		
+//	}
 
 
 

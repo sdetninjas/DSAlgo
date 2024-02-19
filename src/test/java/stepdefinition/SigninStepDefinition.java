@@ -1,6 +1,7 @@
 package stepdefinition;
 
 import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -41,76 +42,68 @@ public class SigninStepDefinition {
 	}
 
 	@When("The user clicks login button after entering the {string} and leaves {string} text box blank")
-	public void the_user_clicks_login_button_after_entering_the_and_leaves_text_box_blank(String string, String string2) {
+	public void the_user_clicks_login_button_after_entering_the_and_leaves_text_box_blank(String username, String password) {
 
 
-		signinPage.enterUserNameId(string);
-		signinPage.enterPassword(string);
+		signinPage.enterUserNameId(username);
+		signinPage.enterPassword(password);
 		signinPage.clickOnLogin();
 }
-//
-//	@Then("The error message {string} appears below Pwd text box")
-//	public void the_error_message_appears_below_pwd_text_box(String string) {
-//		System.out.println("Please fill out this field.");
-//	}
-//
-//	@When("The user clicks login button after entering the {string} only")
-//	public void the_user_clicks_login_button_after_entering_the_only(String string) {
-//		driver.findElement(userName).click();
-//		driver.findElement(userName).sendKeys(" ");
-//
-//		driver.findElement(passWord).click();
-//		driver.findElement(passWord).sendKeys("ninjas@123");
-//		
-//		driver.findElement(logInBtn).click();
-//	}
-//
-//
-//	@Then("The error message {string} appears below Username text box alone")
-//	public void the_error_message_appears_below_username_text_box_alone(String string) {
-//		System.out.println("Please fill out this field.");
-//}
-//
-//
-//	@When("The user clicks login button after entering invalid username and invalid password")
-//	public void the_user_clicks_login_button_after_entering_invalid_username_and_invalid_password() {
-//		driver.findElement(userName).click();
-//		driver.findElement(userName).sendKeys("sdetnin");
-//
-//		driver.findElement(passWord).click();
-//		driver.findElement(passWord).sendKeys("ninjas123");
-//		
-//		driver.findElement(logInBtn).click();
-//	}
-//
-//	@Then("The user should able to see an error message {string}")
-//	public void the_user_should_able_to_see_an_error_message(String string) {
-//		System.out.println("Please fill out this field.");
-//	}
-//
-//	@When("The user clicks login button after entering valid username and invalid password")
-//	public void the_user_clicks_login_button_after_entering_valid_username_and_invalid_password() {
-//		driver.findElement(userName).click();
-//		driver.findElement(userName).sendKeys("sdetninjas");
-//
-//		driver.findElement(passWord).click();
-//		driver.findElement(passWord).sendKeys(" ninjas");
-//		
-//		driver.findElement(logInBtn).click();
-//	}
-//
+
+	@Then("The error message {string} appears below Pwd text box")
+	public void the_error_message_appears_below_pwd_text_box(String string) {
+		System.out.println("Error Msg" + signinPage.getUserNamesValidationMessage());
+		  Assert.assertEquals(string, signinPage.getUserNamesValidationMessage());
+	   	}
+
+	@When("The user clicks login button after entering the {string} only")
+	public void the_user_clicks_login_button_after_entering_the_only(String username,String password) {
+	signinPage.enterUserNameId(username);
+	signinPage.enterPassword(password);
+	signinPage.clickOnLogin();
+	}
+
+
+	@Then("The error message {string} appears below Username text box alone")
+	public void the_error_message_appears_below_username_text_box_alone(String string) {
+		System.out.println("Error Msg" + signinPage.getUserNamesValidationMessage());
+		  Assert.assertEquals(string, signinPage.getUserNamesValidationMessage());}
+
+
+	@When("The user clicks login button after entering invalid username and invalid password")
+	public void the_user_clicks_login_button_after_entering_invalid_username_and_invalid_password(String username,String password) {
+	signinPage.enterUserNameId(username);
+	signinPage.enterPassword(password);
+	signinPage.clickOnLogin();
+	}
+
+	@Then("The user should able to see an error message {string}")
+	public void the_user_should_able_to_see_an_error_message(String string) {
+	System.out.println("Error Msg" + signinPage.getUserNamesValidationMessage());
+	  Assert.assertEquals(string, signinPage.getUserNamesValidationMessage());
+	  }
+	
+
+	@When("The user clicks login button after entering valid username and invalid password")
+	public void the_user_clicks_login_button_after_entering_valid_username_and_invalid_password(String username,String password) {
+	signinPage.enterUserNameId(username);
+	signinPage.enterPassword(password);
+	signinPage.clickOnLogin();
+	}
+
 	@When("The user clicks login button after entering valid username and valid password")
-	public void the_user_clicks_login_button_after_entering_valid_username_and_valid_password(String username, String  password) {
+	public void the_user_clicks_login_button_after_entering_valid_username_and_valid_password(String username,String password ) {
 
 		signinPage.enterUserNameId(username);
 		signinPage.enterPassword(password);
 		signinPage.clickOnLogin();
 	}
-//
+
 	@Then("The user should land in Data Structure Home Page")
 	public void the_user_should_land_in_data_structure_home_page() {
-//	    
-//		
+	    		Assert.assertEquals("NumpyNinja",signinPage.getPageTitle());
+
+		
 	}
 
 	

@@ -4,37 +4,54 @@ In order to login to the website
 As a user I want to give username and password to login
 
 @username_and_password_blank
-Scenario: Please fill out this field should be displayed if username and password is blank
+Scenario Outline: Please fill out this field should be displayed if username and password is blank
 Given The user is on the DS Algo Sign in Page
 When The user clicks login button after leaving the "<username>" text box and "<password>"  text box blank
-Then The error message "Please fill out this field." appears below Username  text box
-
+Then It should display an error "<errorMessage>" below "<input>" textbox
+Examples:
+	|username|password|errorMessage|input|
+	|[blank]|[blank]|Please Fill Out This Field|Username|
+	
 @username_entered_pw_blank
-Scenario: Please fill out this field should be displayed if username is entered and password is blank
+Scenario Outline: Please fill out this field should be displayed if username is entered and password is blank
 Given The user is on the DS Algo Sign in Page
 When The user clicks login button after entering the "<username>" and leaves "<password>" text box blank
 Then The error message "Please fill out this field." appears below Pwd text box
+Examples:
+	|username|password|errorMessage|input|
+	|[sdetninjas|[blank]|Please Fill Out This Field|Password|
 
 @username_blank_pw_entered
-Scenario: Please fill out this field should be displayed if username is blank and password is entered
+Scenario Outline: Please fill out this field should be displayed if username is blank and password is entered
 Given The user is on the DS Algo Sign in Page
 When The user clicks login button after entering the "<password>" only
 Then The error message "Please fill out this field." appears below Username text box alone
+Examples:
+	|username|password|errorMessage|input|
+	|[blank]|sdetninjas|Please Fill Out This Field|Username|
 
 @username_and_pw_invalid
-Scenario: Invalid username and password should be displayed if username and password is invalid
+Scenario Outline: Invalid username and password should be displayed if username and password is invalid
 Given The user is on the DS Algo Sign in Page
-When The user clicks login button after entering invalid username and invalid password
+When The user clicks login button after entering the "<username>" and "<password>" invalid
 Then The user should able to see an error message "Invalid username and password"
+Examples:
+	|username|password|errorMessage|
+	|sdet|sdetninjas|Invalid username and password |
 
 @valid_username_invalid_pw
-Scenario: Invalid username and password should be displayed if username is valid and password is invalid
+Scenario Outline: Invalid username and password should be displayed if username is valid and password is invalid
 Given The user is on the DS Algo Sign in Page
-When The user clicks login button after entering valid username and invalid password
+When The user clicks login button after entering valid "<username >"and invalid "<password>"
 Then The user should able to see an error message "Invalid username and password"
+Examples:
+	|username|password|errorMessage|
+	|sdetninjas|sdetninjas|Invalid username and password |
+
 
 @valid_username_pw
-Scenario: The user should land in Data Structure Home Page when valid username and password is entered
+Scenario Outline: The user should land in Data Structure Home Page when valid username and password is entered
 Given The user is on the DS Algo Sign in Page
-When The user clicks login button after entering valid username and valid password
+When The user clicks login button after entering valid "sdetninjas" and valid "ninjas@123"
 Then The user should land in Data Structure Home Page
+

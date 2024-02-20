@@ -27,8 +27,8 @@ When User enters username "sdetninjas3"
 And User enters password "ninjas@123" 
 And User clicks "Login" button 
 Then The user should be redirected to Homepage
-#
-#
+
+
 #@username_and_password_blank
 #Scenario Outline: Please fill out this field should be displayed if username and password is blank
 #Given The user is on the DS Algo Sign in Page
@@ -73,8 +73,8 @@ Then The user should be redirected to Homepage
 #Examples:
 #	|username|password|errorMessage|
 #	|sdetninjas|sdetninjas|Invalid username and password |
-
-
+#
+#
 #@valid_username_pw
 #Scenario Outline: The user should land in Data Structure Home Page when valid username and password is entered
 #Given The user is on the DS Algo Sign in Page

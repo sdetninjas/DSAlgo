@@ -19,7 +19,7 @@ public class TreePage extends BasePage {
 	@FindBy(xpath="//button[text()='Run']")
 	private WebElement run;
 	
-	@FindBy(className="CodeMirror cm-s-default")
+	@FindBy(css=".CodeMirror-scroll")
 	private WebElement editor;
 	
 	@FindBy(xpath="//a[text()='Terminologies']")

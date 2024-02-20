@@ -2,10 +2,16 @@
 Feature: Array Page 
 
 Background: User is on the login page
-Given The user is on the DS Algo Sign in Page
-When The user clicks login button after entering valid username "sdetninjas" and valid password "ninjas@123"
+Given The user opens Login Page
+When User enters username "sdetninjas3"
+And User enters password "ninjas@123" 
+And User clicks "Login" button 
+Then The user should be redirected to Homepage
+
+#Given The user is on the DS Algo Sign in Page
+#When The user clicks login button after entering valid username "sdetninjas" and valid password "ninjas@123"
 #When The user clicks login button after entering valid "sdetninjas" and valid "ninjas@123"
-Then The user should land in Data Structure Home Page
+#Then The user should land in Data Structure Home Page
 
 @scenario1 @TC_A_001
 Scenario: Array Page

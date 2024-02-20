@@ -3,6 +3,10 @@
   <groupId>DSALgo</groupId>
   <artifactId>DSAlgo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+    <properties>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+</properties>
   <build> 
 	  <plugins>
    
@@ -95,8 +99,11 @@
     <artifactId>extentreports-cucumber7-adapter</artifactId>
     <version>1.14.0</version>
 </dependency>
-
-
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-compiler-plugin</artifactId>
+    <version>3.12.1</version>
+</dependency>
 
   
   </dependencies>

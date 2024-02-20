@@ -16,10 +16,37 @@ Then The user should be redirected to Homepage
 @scenario1 @TC_A_001
 Scenario: Array Page
 
+<<<<<<< HEAD
 Given The  user is on the home page
 When The user clicks a "Get Started" in Array
 Then The user should be redirected to "Array" Page
  
+=======
+Given The  user is on the Array page
+When The user clicks the link for "<pagename>" 
+And The user should be redirected to "<pagename>" Page
+And The user clicks Try Here Button
+Then The user should be redirected to a Python Editor
+
+
+Examples:
+|pagename|
+|Arrays in Python| 
+|Arrays Using List|
+|Basic Operations in Lists|
+|Applications of Array|
+
+
+
+
+
+#@scenario2 @TC_A_002
+#Scenario:
+#Given The user is on the Arrays in Python Page
+#When The user clicks Try Here button of Array in Python Page
+#Then The user should be redirected to a page having an Python Editor with a url "https://dsportalapp.herokuapp.com/tryEditor"
+# 
+>>>>>>> branch 'master' of https://github.com/sdetninjas/DSAlgo
 #@scenario2 @TC_A_002
 #Scenario: Array Page
 #

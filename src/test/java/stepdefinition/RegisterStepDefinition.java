@@ -39,7 +39,7 @@ public class RegisterStepDefinition {
 		registerPage.clickOnRegister();
 	}
 
-	@Then("It should display an error {string} below {string} textbox")
+	@Then("It should display an error {string} below {string} textbox in Register page")
 	public void it_should_display_an_error_below_textbox(String errorMsg, String inputField) {
 	  if("Username".equals(inputField)) {
 		  Assert.assertEquals(errorMsg, registerPage.getUserNameValidationMessage());

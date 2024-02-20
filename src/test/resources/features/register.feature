@@ -8,7 +8,7 @@ When User enters username "<username>" in Register page
 And User enters password "<password>" in Register page
 And User enters confirmPassword "<confirmPassword>" in Register page
 And User clicks Register button
-Then It should display an error "<errorMessage>" below "<input>" textbox
+Then It should display an error "<errorMessage>" below "<input>" textbox in Register page
 Examples:
 	|username|password|confirmPassword|errorMessage|input|
 	||||Please fill out this field.|Username|

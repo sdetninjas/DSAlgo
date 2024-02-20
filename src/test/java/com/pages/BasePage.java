@@ -28,7 +28,7 @@ public abstract class BasePage {
 			
 		}
 		
-		protected void waitFor() {
+		public void waitFor() {
 			waitFor(ConfigReader.getPropertyInt("default_wait_time"));
 			
 		}
@@ -55,7 +55,7 @@ public abstract class BasePage {
 			driver.switchTo().alert().accept();
 			
 		}
-		protected void waitFor(long milliseconds ) {
+		public void waitFor(long milliseconds ) {
 			try {
 				Thread.sleep(milliseconds);
 			} catch (InterruptedException e) {

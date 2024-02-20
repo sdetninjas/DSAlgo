@@ -1,6 +1,12 @@
 @arrayScenario1
 Feature: Array Page 
 
+Background: User is on the login page
+Given The user is on the DS Algo Sign in Page
+When The user clicks login button after entering valid username "sdetninjas" and valid password "ninjas@123"
+#When The user clicks login button after entering valid "sdetninjas" and valid "ninjas@123"
+Then The user should land in Data Structure Home Page
+ 
 @scenario1 @TC_A_001
 Scenario: Array Page
 
@@ -244,23 +250,17 @@ Scenario: Python Editor
 
 Given The user is on the Python Editor
 When The user clicks the Run Button without entring the code in the Editor
-Then  d
+Then  d """d
 
 @scenario35 @TC_A_0035
 Scenario: 
 
-Given 
-When 
-And 
-Then 
+
 
 @scenario28 @TC_A_0028
 Scenario: 
 
-Given 
-When 
-And 
-Then 
+
 
 @scenario28 @TC_A_0028
 Scenario: 
@@ -274,8 +274,9 @@ Scenario:
 
 Given 
 When 
-Then 
+Then """
  
+
 
 
 

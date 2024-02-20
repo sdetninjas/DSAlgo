@@ -11,7 +11,7 @@ import io.cucumber.testng.CucumberOptions;
 	@CucumberOptions(
 			plugin = {"pretty", "html:target/register.html"}, //reporting purpose
 			monochrome=false,  //console output colour
-			tags = "@tagTree", //tags from feature file
+			tags = "@tag", //tags from feature file
 			features = {"src/test/resources/features"}, //location of feature files
 			glue= {"stepdefinition","com.apphooks"}) //location of step definition files
 

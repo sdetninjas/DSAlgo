@@ -19,27 +19,27 @@ public class RegisterStepDefinition {
 		registerPage.openPage();
 	}
 
-	@When("User enters username {string}")
-	public void user_enters_username(String username) {
+	@When("User enters username {string} in Register page")
+	public void user_enters_username_in_Register_page(String username) {
 		registerPage.enterUserName(username);
 	}
 
-	@When("User enters password {string}")
-	public void user_enters_password(String password) {
+	@When("User enters password {string} in Register page")
+	public void user_enters_password_in_Register_page(String password) {
 		registerPage.enterPassword(password);
 	}
 
-	@When("User enters confirmPassword {string}")
-	public void user_enters_confirm_password(String cfmpsw) {
+	@When("User enters confirmPassword {string} in Register page")
+	public void user_enters_confirm_password_in_Register_page(String cfmpsw) {
 		registerPage.enterConfirmPassword(cfmpsw);
 	}
 
-	@When("User clicks {string} button")
-	public void user_clicks_button(String string) {
+	@When("User clicks Register button")
+	public void user_clicks_button() {
 		registerPage.clickOnRegister();
 	}
 
-	@Then("It should display an error {string} below {string} textbox")
+	@Then("It should display an error {string} below {string} textbox in Register page")
 	public void it_should_display_an_error_below_textbox(String errorMsg, String inputField) {
 	  if("Username".equals(inputField)) {
 		  Assert.assertEquals(errorMsg, registerPage.getUserNameValidationMessage());

@@ -4,11 +4,11 @@ Feature: Login to DS-Algo application Register
 @negativeScenario100 @TC_0010
 Scenario Outline: Register Page with empty values using DT
 Given User opens Register Page
-When User enters username "<username>"
-And User enters password "<password>"
-And User enters confirmPassword "<confirmPassword>"
-And User clicks "Register" button
-Then It should display an error "<errorMessage>" below "<input>" textbox
+When User enters username "<username>" in Register page
+And User enters password "<password>" in Register page
+And User enters confirmPassword "<confirmPassword>" in Register page
+And User clicks Register button
+Then It should display an error "<errorMessage>" below "<input>" textbox in Register page
 Examples:
 	|username|password|confirmPassword|errorMessage|input|
 	||||Please fill out this field.|Username|

@@ -5,26 +5,41 @@ Background: User is on the login page
 Given The user opens Login Page
 When User enters username "sdetninjas3"
 And User enters password "ninjas@123" 
-And User clicks "Login" button 
-Then The user should be redirected to Homepage
-
-#Given The user is on the DS Algo Sign in Page
-#When The user clicks login button after entering valid username "sdetninjas" and valid password "ninjas@123"
-##When The user clicks login button after entering valid "sdetninjas" and valid "ninjas@123"
-#Then The user should land in Data Structure Home Page
+And User clicks "Login" button
+And The user clicks a Get Started for Array page 
+Then The user should be redirected to Array page
 
 @scenario1 @TC_A_001
-Scenario: Array Page
+Scenario Outline: Array Page
 
-Given The  user is on the home page
-When The user clicks a "Get Started" in Array
-Then The user should be redirected to "Array" Page
- 
+Given The  user is on the Array page
+When The user clicks the link for "<pagename>" 
+And The user should be redirected to "<pagename>" Page
+And The user clicks Try Here Button
+Then The user should be redirected to a Python Editor
+
+
+Examples:
+|pagename|
+|Arrays in Python| 
+|Arrays Using List|
+|Basic Operations in Lists|
+|Applications of Array|
+
+
+
+
+#@scenario2 @TC_A_002
+#Scenario:
+#Given The user is on the Arrays in Python Page
+#When The user clicks Try Here button of Array in Python Page
+#Then The user should be redirected to a page having an Python Editor with a url "https://dsportalapp.herokuapp.com/tryEditor"
+# 
 #@scenario2 @TC_A_002
 #Scenario: Array Page
 #
 #Given The  user is on the array page
-#When The user clicks a Arrays in Python link
+#When The user clicks a "Arrays in Python" link
 #Then The user should be redirected to "Array in Python " Page
 #
 #@scenario3 @TC_A_003

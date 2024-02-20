@@ -153,7 +153,8 @@ public void it_should_display_an_error_below_textbox(String errorMsg, String inp
 //}
 @Then("The user should be redirected to Homepage")
 public void the_user_should_be_redirected_to_homepage() {
-    
+	Assert.assertEquals("NumpyNinja",signinPage.getPageTitle());
+
 }
 
 	

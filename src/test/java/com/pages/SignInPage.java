@@ -17,6 +17,9 @@ public class SignInPage extends BasePage{
 	@FindBy(xpath="//input[@value='Login']")
 	private WebElement logInBtn;
 	
+	@FindBy(className = "alert-primary")
+	private WebElement errorBox;
+	
 	@Override
 	public void openPage() {
 		
@@ -42,6 +45,9 @@ public class SignInPage extends BasePage{
 		logInBtn.click();
 		
 		
+	}
+	public String getErrorMessage() {
+		return errorBox.getText();
 	}
 //	public void enterLoginCreds(String username, String password) {
 //		userName.sendKeys(username);

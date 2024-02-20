@@ -34,6 +34,7 @@ public class DriverManagerFact {
 		}
 	getDriver().manage().deleteAllCookies();
 	getDriver().manage().window().maximize();
+	
 	return getDriver();
 	
 	

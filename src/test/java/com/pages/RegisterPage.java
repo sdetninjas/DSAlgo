@@ -8,11 +8,13 @@ public class RegisterPage extends BasePage{
 	@FindBy(id="id_username") 
 	private WebElement usernameTxt;
 	@FindBy(id="id_password1") 
-	private WebElement pswTxt;
+	private WebElement pswTxt;	
 	@FindBy(id="id_password2")
 	private WebElement confirmpswTxt;
 	@FindBy(xpath="//input[@value='Register']") 
 	private WebElement register;
+	@FindBy(className = "alert-primary")
+	private WebElement errorBox;
 		
 	
 	
@@ -47,9 +49,19 @@ public class RegisterPage extends BasePage{
 		return getValidationMessage(pswTxt);
 	}
 	
+	public String getPasswordConfirmationValidationMessage() {
+		return getValidationMessage(confirmpswTxt);
+	}
+	
 	public void clickOnRegister() {
 		register.click();
 		
 	}
+	
+	public String getErrorMessage() {
+		return errorBox.getText();
+	}
+	
+	
 	
 }

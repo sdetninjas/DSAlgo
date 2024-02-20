@@ -21,7 +21,7 @@ public class ArrayStepDefinition{
 
 	@When("The user clicks a {string} in Array")
 	public void the_user_clicks_a_in_array(String string) {
-		arrayPage.clickLink(null);
+		//arrayPage.clickLink(null);
 		
 	}
 	

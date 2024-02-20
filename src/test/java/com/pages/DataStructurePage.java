@@ -106,15 +106,7 @@ public class DataStructurePage extends BasePage{
 		// TODO Auto-generated method stub
 
 	}
-	protected void navigateBack() {
-		driver.navigate().back();
-	}
-	protected void getAlertText() {
-		driver.switchTo().alert().getText();
-	}
-	protected void acceptAlertText() {
-		driver.switchTo().alert().accept();
-	}
+	
 
 	public void loginNow(String userNameValue, String passwordValue) {
 		openPage();

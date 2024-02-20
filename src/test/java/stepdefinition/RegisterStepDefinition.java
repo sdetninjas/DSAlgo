@@ -14,7 +14,7 @@ public class RegisterStepDefinition {
 	private RegisterPage registerPage = new RegisterPage(); 
 	//private HomePage homePage = new RegisterPage(); 
 	
-	@Given("The user opens Register Page")
+	@Given("User opens Register Page")
 	public void the_user_opens_register_page() {
 		registerPage.openPage();
 	}
@@ -52,10 +52,10 @@ public class RegisterStepDefinition {
 	  }
 	}
 
-	@Then("The user should be redirected to Homepage")
+	@Then("User should be redirected to Homepage")
 	public void the_user_should_be_redirected_to_homepage() {
 		Assert.assertEquals("NumpyNinja",registerPage.getPageTitle());
-	   
+		
 	}
 
 

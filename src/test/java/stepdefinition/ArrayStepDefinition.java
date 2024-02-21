@@ -12,51 +12,45 @@ public class ArrayStepDefinition{
 	
 	private ArrayPage arrayPage = new ArrayPage();
 	
-	@Given("The  user is on the home page")
-	public void the_user_is_on_the_array_page() {
-		System.out.println("Iam in array page");
-		Assert.assertEquals(arrayPage.getPageTitle(),"NumpyNinja");
+	@When("The user clicks a Get Started for Array page")
+	public void the_user_clicks_a_get_started_for_array_page() {
+		arrayPage.clickarrayGetStartedBtn();
+	}
+
+	@Then("The user should be redirected to Array page")
+	public void the_user_should_be_redirected_to_array_page() {
+	  Assert.assertEquals("Array", arrayPage.getPageTitle());
+	}
+
+	@Given("The  user is on the Array page")
+	public void the_user_is_on_the_Array_page() {
+		 Assert.assertEquals("Array", arrayPage.getPageTitle());
+	}
+
+	@When("The user clicks the link for {string}")
+	public void the_user_clicks_the_link_for(String pagename) {
+		arrayPage.clickByName(pagename);
 	    
 	}
 
-	@When("The user clicks a {string} in Array")
-	public void the_user_clicks_a_in_array(String string) {
-		//arrayPage.clickLink(null);
-		
-	}
-	
 	@Then("The user should be redirected to {string} Page")
-	public void the_user_should_be_redirected_to_page(String getstarted) {
+	public void the_user_should_be_redirected_to_page(String pagename) {
 	   
-	}
-	
-	
-	@When("The user clicks a Arrays in Python link")
-	public void the_user_clicks_a_arrays_in_python_link() {
-		
-		
-	   
+		Assert.assertEquals(pagename,arrayPage.getPageTitle());
 	}
 
-	
-	
-	@Given("The user is on the Array in Python Page")
-	public void the_user_is_on_the_array_in_python_page() {
+	@When("The user clicks Try Here Button")
+	public void the_user_clicks_try_here_button() {
+	    arrayPage.clickTryEditorBtn();
+		
+	}
+
+	@Then("The user should be redirected to a Python Editor")
+	public void the_user_should_be_redirected_to_a_python_editor() {
+		Assert.assertEquals("Assessment", arrayPage.getPageTitle() );
 	    
 	}
 
-	@When("The user clicks Try Here button of Array in Python Page")
-	public void the_user_clicks_try_here_button_of_array_in_python_page() {
-	   
-	}
-
-	@Then("The user should be redirected to a page having an Python Editor with a url {string}")
-	public void the_user_should_be_redirected_to_a_page_having_an_python_editor_with_a_url(String string) {
-	   
-	}
-
-
-
-
 	
+		
 }

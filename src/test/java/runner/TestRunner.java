@@ -11,7 +11,11 @@ import io.cucumber.testng.CucumberOptions;
 	@CucumberOptions(
 			plugin = {"pretty", "html:target/register.html"}, //reporting purpose
 			monochrome=false,  //console output colour
+<<<<<<< HEAD
 			tags = "@tagTree", //tags from feature file
+=======
+			//tags = "@tag1", //tags from feature file
+>>>>>>> branch 'master' of https://github.com/sdetninjas/DSAlgo
 			features = {"src/test/resources/features"}, //location of feature files
 			glue= {"stepdefinition","com.apphooks"}) //location of step definition files
 

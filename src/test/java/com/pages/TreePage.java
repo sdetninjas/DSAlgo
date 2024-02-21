@@ -16,10 +16,10 @@ public class TreePage extends BasePage {
 	@FindBy(xpath="//a[text()='Try here>>>']")
 	private WebElement tryHere ;
 	
-	@FindBy(xpath="//button[text()='Run']")
+	@FindBy(xpath="//*[@id='answer_form']/button")
 	private WebElement run;
 	
-	@FindBy(css=".CodeMirror-scroll")
+	@FindBy(xpath="//form[@id='answer_form']/div/div/div/textarea")
 	private WebElement editor;
 	
 	@FindBy(xpath="//a[text()='Terminologies']")
@@ -116,10 +116,10 @@ public class TreePage extends BasePage {
 		editor.click();
 	}
 	public void enterPyCode() {
-		editor.sendKeys("print\"hello\"");
+		editor.sendKeys("print 'hello';");
 	}
 	public void enterInvaliPyCode() {
-		editor.sendKeys("Print\"hello\"");
+		editor.sendKeys("Print 'hello';");
 
 	}
 	public void clickTerminologies() {

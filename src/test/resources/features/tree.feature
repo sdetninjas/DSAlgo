@@ -6,14 +6,15 @@ Given The user opens Login Page
 When User enters username "sdetninjas3"
 And User enters password "ninjas@123" 
 And User clicks "Login" button 
-Then The user should be redirected to Homepage
+And The user clicks a Get Started for Tree page
+Then The user should be redirected to Tree page
 
 
-@tag1
-Scenario: DS_algo Home page
-Given The user comes back to the DS_algo home page to select or start DS Tree
-When The user select ""Tree"" from the Data Structure dropdown menu clicks the ""Get Started"" button in Tree Panel"
-Then The user should be redirected to ""Tree"" page."
+#@tag1
+#Scenario: DS_algo Home page
+#Given The user comes back to the DS_algo home page to select or start DS Tree
+#When The user select ""Tree"" from the Data Structure dropdown menu clicks the ""Get Started"" button in Tree Panel"
+#Then The user should be redirected to ""Tree"" page."
 
 @tag2
 Scenario: Tree home page

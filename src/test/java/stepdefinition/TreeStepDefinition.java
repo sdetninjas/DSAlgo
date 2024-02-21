@@ -406,6 +406,7 @@ public class TreeStepDefinition  {
 		treePage.clickApplicatnBiTree();
 		Assert.assertEquals("Applications of Binary trees",treePage.getPageTitle());
 
+		
 	}
 
 	@When("The user writes the invalid python code	click run button")

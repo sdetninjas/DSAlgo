@@ -7,7 +7,8 @@ When User enters username "sdetninjas3"
 And User enters password "ninjas@123" 
 And User clicks "Login" button 
 And The user clicks a Get Started for Tree page
-Then The user should be redirected to Tree page
+Then The user should be redirected to Tree page 
+
 
 
 #@tag1

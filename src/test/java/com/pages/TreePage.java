@@ -56,6 +56,8 @@ public class TreePage extends BasePage {
 	@FindBy(xpath="//a[text()='Applications of Binary trees']")
 	private WebElement applicationsOfBinaryTreeBtn ;
 	
+	@FindBy(xpath="//a[text()=' Binary search tree']")
+	private WebElement binarySearchTree ;
 	
 	@FindBy(xpath="//a[text()='Implementation Of BST']")
 	private WebElement implementationOfBstBtn ;
@@ -155,7 +157,7 @@ public class TreePage extends BasePage {
 		applicationsOfBinaryTreeBtn.click();
 	}
 	public void clickBinarySearchTree() {
-		applicationsOfBinaryTreeBtn.click();
+		binarySearchTree.click();
 	}
 	public void clickImplementatnBST() {
 		implementationOfBstBtn.click();

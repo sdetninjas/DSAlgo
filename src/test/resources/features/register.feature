@@ -20,10 +20,10 @@ Examples:
 @positiveScenario9 @TC_009
 Scenario: Register Page with valid Username and Password
 Given User opens Register Page
-When User enters username "sdetninjas3"
-And User enters password "ninjas@123" 
-And User enters confirmPassword "ninjas@123"
-And User clicks "Register" button 
+When User enters username "sdetninjas3" in Register page
+And User enters password "ninjas@123" in Register page
+And User enters confirmPassword "ninjas@123" in Register page
+And User clicks Register button 
 Then User should be redirected to Homepage
 
  

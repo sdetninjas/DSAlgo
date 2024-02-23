@@ -18,22 +18,19 @@ public class DriverManagerFact {
 		
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
-			localDriver.set( new ChromeDriver());
-	
-	}
-		else if (browser.equals("Firefox")) {
+			localDriver.set(new ChromeDriver());
+		} else if (browser.equals("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
-			localDriver.set( new FirefoxDriver());
-	}
-		else if (browser.equals("Safari")) {
+			localDriver.set(new FirefoxDriver());
+		} else if (browser.equals("Safari")) {
 			WebDriverManager.safaridriver().setup();
-			localDriver.set( new SafariDriver());
-	}
-		else {
-			System.out.println("Please enter correct browser: "+ browser);
+			localDriver.set(new SafariDriver());
+		} else {
+			System.out.println("Please enter correct browser: " + browser);
 		}
 	getDriver().manage().deleteAllCookies();
 	getDriver().manage().window().maximize();
+	//getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	
 	return getDriver();
 	

@@ -12,12 +12,33 @@ public class ArrayPage extends BasePage{
 	private WebElement arrayGetStartedBtn;
 	@FindBy (xpath= "//*[@href='/tryEditor']")
 	private WebElement tryEditorBtn;
+	
+//	@FindBy(xpath="//a[text()='Try here>>>']")
+//	private WebElement tryHere ;
+//	
+//	@FindBy(xpath="//*[@id='answer_form']/button")
+//	private WebElement run; 
+//	
+//	@FindBy(xpath="//form[@id='answer_form']/div/div/div/textarea")
+//	private WebElement editor;
 
 	@Override
 	public void openPage() {
 		driver.get(BASE_URL + "array");
 	}
+
 	
+	public void openArrayPythonPage() {
+		driver.get(BASE_URL + "array/arrays-in-python/");
+	}
+	
+	public void openPracticePage() {
+		driver.get(BASE_URL + "array/practice/");
+	}
+	
+	public void openAssessmentPage() {
+		driver.get(BASE_URL + "question/1");
+	}
 	public void clickByName(String pagename) {
 		String newName = pagename.toLowerCase().replaceAll(" " , "-");
 		String newXpath = "//*[@href='"+newName	+ "']" ;

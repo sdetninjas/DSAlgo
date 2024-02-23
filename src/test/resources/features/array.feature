@@ -1,15 +1,15 @@
-@arrayScenario1
+@arrayScenarios
 Feature: Array Page 
 
 Background: User is on the login page
 Given The user opens Login Page
-When User enters username "sdetninjas3"
+When User enters username "sdetninjas"
 And User enters password "ninjas@123" 
 And User clicks "Login" button
 And The user clicks a Get Started for Array page 
 Then The user should be redirected to Array page
 
-@scenario1 @TC_A_001
+@TC_A_001
 Scenario Outline: Array Page
 
 Given The  user is on the Array page
@@ -27,6 +27,42 @@ Examples:
 |Applications of Array|
 
 
+@TC_A_002
+Scenario: Array - Practice Questions Page
+
+Given The  user is on the Arrays in Python page
+When The user clicks the link for "array/practice" 
+And The user should be redirected to "Practice Questions" Page
+
+@TC_A_003
+Scenario Outline:
+
+Given The  user is on the practice page
+When The user clicks the link for "<practicepage>" 
+And The user should be redirected to "Assessment" Page
+
+Examples:
+|practicepage|
+|Search the array|
+|Max Consecutive Ones|
+|Find Numbers with Even Number of Digits|
+|Squares of a Sorted Array|
+
+@TC_A_004
+Scenario Outline: Assessment page
+
+Given The  user is on the Assessment page
+When The user clicks the link for "Search the array"
+And The user should be redirected to "Search the array" Page
+And The User gives the input from sheetname "<SheetName>" and <RowNumber> 
+And The user clicks Run and submit
+Then Message displyed "<colno>"
+
+Examples:
+|SheetName|RowNumber|colno|
+|Python_Code|1|2|
+|Python_Code|2|2|
+|Python_Code|3|2|
 
 
 

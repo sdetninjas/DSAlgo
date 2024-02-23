@@ -10,13 +10,6 @@ And The user clicks a Get Started for Tree page
 Then The user should be redirected to Tree page 
 
 
-
-#@tag1
-#Scenario: DS_algo Home page
-#Given The user comes back to the DS_algo home page to select or start DS Tree
-#When The user select ""Tree"" from the Data Structure dropdown menu clicks the ""Get Started"" button in Tree Panel"
-#Then The user should be redirected to ""Tree"" page."
-
 @tag2
 Scenario: Tree home page
 Given The user is on the ""Tree"" page

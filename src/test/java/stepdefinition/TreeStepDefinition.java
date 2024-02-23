@@ -20,6 +20,7 @@ public class TreeStepDefinition  {
 	
 	@When("The user clicks a Get Started for Tree page")
 	public void the_user_clicks_a_get_started_for_Tree_page() {
+		    treePage.waitFor(2000);
 		treePage.clickGetStarted();
 	}
  
@@ -29,39 +30,15 @@ public class TreeStepDefinition  {
 	
 	@Then("The user should be redirected to Tree page")
 	public void the_user_should_be_redirected_to_Treepage() {
+	   // treePage.waitFor(2000);
+
 		Assert.assertEquals("Tree",treePage.getPageTitle());
 		
 	}
 	
- 
-//	@Then("The user should be redirected to Array page")
-//	public void the_user_should_be_redirected_to_array_page() {
-//	  Assert.assertEquals("Array", arrayPage.getPageTitle());
-//	}
-//	
-//	@Given("The user comes back to the DS_algo home page to select or start DS Tree")
-//	public void the_user_comes_back_to_the_ds_algo_home_page_to_select_or_start_ds_tree() {
-//		Assert.assertEquals("NumpyNinja",treePage.getPageTitle());
-//
-//	}
-
-//	@When("The user select Tree from the Data Structure dropdown menu clicks the Get Started button in Tree Panel")
-//	public void the_user_select_tree_from_the_data_structure_dropdown_menu_clicks_the_get_started_button_in_tree_panel() {
-//		System.out.println("start");
-//		treePage.clickGetStarted();
-//		System.out.println("stop");
-//
-//	}
-//
-//	@Then("The user should be redirected to Tree page.")
-//	public void the_user_should_be_redirected_to_tree_page() {
-//		Assert.assertEquals("Tree",treePage.getPageTitle());
-//
-//	}
-	
-
 	@Given("The user is on the \"\"Tree\"\" page")
 	public void the_user_is_on_the_tree_page() {
+		treePage.clickGetStarted();
 		Assert.assertEquals("Tree",treePage.getPageTitle());
 
 	}
@@ -79,13 +56,14 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Overview of Trees\"\" page")
 	public void the_user_is_on_the_overview_of_trees_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 		Assert.assertEquals("Overview of Trees",treePage.getPageTitle());
 	}
 
 	@When("The user clicks \"\"Try Here\"\" button")
 	public void the_user_clicks_try_here_button() {
-	    treePage.waitFor(1000);
+	   // treePage.waitFor(1000);
 
 	    treePage.clickTryHere();
 	}
@@ -98,10 +76,10 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the Python Editor")
 	public void the_user_is_on_the_python_editor() {
-	    treePage.waitFor(1000);
-
+	    //treePage.waitFor(1000);
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
-	    treePage.waitFor(1000);
+	    //treePage.waitFor(1000);
 
 	    treePage.clickTryHere();
 		//Assert.assertEquals("Assessment",treePage.getPageTitle());
@@ -110,7 +88,7 @@ public class TreeStepDefinition  {
 
 	@When("The user clicks the Run Button without entering the code in the Editor")
 	public void the_user_clicks_the_run_button_without_entering_the_code_in_the_editor() {
-	    treePage.waitFor(1000);
+	    //treePage.waitFor(1000);
 
 	   treePage.clickRun();
 	}
@@ -123,10 +101,11 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the editor page")
 	public void the_user_is_on_the_editor_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 	    treePage.clickTryHere();
-		//Assert.assertEquals("Assessment",treePage.getPageTitle());
-	    treePage.waitFor(1000);
+		Assert.assertEquals("Assessment",treePage.getPageTitle());
+	   // treePage.waitFor(1000);
 
 		//treePage.clickEditor();
 
@@ -134,23 +113,24 @@ public class TreeStepDefinition  {
 
 	@When("The user writes the valid python code	and click run button")
 	public void the_user_writes_the_valid_python_code_and_click_run_button() throws InterruptedException {
-	    treePage.enterPyCode();
-	    treePage.waitFor(2000);
+	   // treePage.waitFor(1000);
+		treePage.enterPyCode();
+	   // treePage.waitFor(1000);
 	    treePage.clickRun();
 	}
 
 	@Then("The user is able to see the output inside the console.")
 	public void the_user_is_able_to_see_the_output_inside_the_console() {
-	    treePage.waitFor(1000);
+	    //treePage.waitFor(1000);
 
 		treePage.output();
 	}
 
 	@When("The user writes the invalid python code and click run button")
 	public void the_user_writes_the_invalid_python_code_and_click_run_button() {
-	    treePage.waitFor(1000);
+	   // treePage.waitFor(1000);
 		treePage.enterInvaliPyCode();
-	    treePage.waitFor(1000);
+	   // treePage.waitFor(1000);
 
     treePage.clickRun();
 
@@ -158,12 +138,15 @@ public class TreeStepDefinition  {
 
 	@Then("The user see error msg in alert window")
 	public void the_user_see_error_msg_in_alert_window() {
+	    //treePage.waitFor(1000);
+
 	treePage.getAlertText();
 
 	}
 
 	@Given("The user is on the editor page with Alert error message")
 	public void the_user_is_on_the_editor_page_with_alert_error_message() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 	    treePage.clickTryHere();
 		treePage.enterInvaliPyCode();
@@ -187,6 +170,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user go back and is on the \"\"Overview of Trees\"\" page")
 	public void the_user_go_back_and_is_on_the_overview_of_trees_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 	    treePage.clickTryHere();
 		treePage.navigateBack();
@@ -205,7 +189,8 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Terminologies\"\" page\"")
 	public void the_user_is_on_the_terminologies_page() {
-		
+		treePage.clickGetStarted();
+		treePage.clickOnOverviewTrees();
 		treePage.clickTerminologies();
 		Assert.assertEquals("Terminologies",treePage.getPageTitle());
 
@@ -240,6 +225,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Types of Trees\"\" page\"")
 	public void the_user_is_on_the_types_of_trees_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 		treePage.clickTypesOfTree();
 		Assert.assertEquals("Types of Trees",treePage.getPageTitle());
@@ -264,6 +250,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Tree Traversals\"\" page\"")
 	public void the_user_is_on_the_tree_traversals_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 		treePage.clickTreeTraversals();
 		Assert.assertEquals("Tree Traversals",treePage.getPageTitle());
@@ -288,6 +275,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Traversals-Illustration\"\" page\"")
 	public void the_user_is_on_the_traversals_illustration_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 		treePage.clickTraversalIllust();
 		Assert.assertEquals("Traversals-Illustration",treePage.getPageTitle());
@@ -307,6 +295,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Binary Trees\"\" page\"")
 	public void the_user_is_on_the_binary_trees_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 		treePage.clickBinaryTree();
 		Assert.assertEquals("Binary Trees",treePage.getPageTitle());
@@ -326,6 +315,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Types of Binary Trees\"\" page\"")
 	public void the_user_is_on_the_types_of_binary_trees_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 		treePage.clickTypesBinaryTree();
 		Assert.assertEquals("Types of Binary Trees",treePage.getPageTitle());
@@ -345,6 +335,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Implementation in Python\"\" page\"")
 	public void the_user_is_on_the_implementation_in_python_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 		treePage.clickImplementPy();
 		Assert.assertEquals("Implementation in Python",treePage.getPageTitle());
@@ -364,6 +355,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Binary Tree Traversals\"\" page\"")
 	public void the_user_is_on_the_binary_tree_traversals_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 		treePage.clickBinaryTreeTravers();
 		Assert.assertEquals("Binary Tree Traversals",treePage.getPageTitle());
@@ -383,6 +375,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Implementation of Binary Trees\"\" page\"")
 	public void the_user_is_on_the_implementation_of_binary_trees_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 		treePage.clickImplementBinaryTree();
 		Assert.assertEquals("Implementation of Binary Trees",treePage.getPageTitle());
@@ -402,6 +395,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Applications of Binary trees\"\" page\"")
 	public void the_user_is_on_the_applications_of_binary_trees_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 		treePage.clickApplicatnBiTree();
 		Assert.assertEquals("Applications of Binary trees",treePage.getPageTitle());
@@ -428,6 +422,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Binary Search Trees\"\" page\"")
 	public void the_user_is_on_the_binary_search_trees_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 		treePage.clickBinarySearchTree();
 		Assert.assertEquals("Binary Search Trees",treePage.getPageTitle());
@@ -447,6 +442,7 @@ public class TreeStepDefinition  {
 
 	@Given("The user is on the \"\"Implementation Of BST\"\" page\"")
 	public void the_user_is_on_the_implementation_of_bst_page() {
+		treePage.clickGetStarted();
 		treePage.clickOnOverviewTrees();
 		treePage.clickImplementatnBST();
 		Assert.assertEquals("Implementation Of BST",treePage.getPageTitle());

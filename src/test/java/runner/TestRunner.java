@@ -9,11 +9,11 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class) //Junit execution
 
 	@CucumberOptions(
-			plugin = {"pretty", "html:target/register.html"}, //reporting purpose
+			plugin = {"pretty", "html:target/tree.html"}, //reporting purpose
 			monochrome=false,  //console output colour
 
 
-			//tags = "@tag1", //tags from feature file
+			//tags = "@tag2", //tags from feature file
 			features = {"src/test/resources/features"}, //location of feature files
 			glue= {"stepdefinition","com.apphooks"}) //location of step definition files
 

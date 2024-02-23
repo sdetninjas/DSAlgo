@@ -119,8 +119,9 @@ public void user_enters_password(String password) {
 	signinPage.enterPassword(password);
 }
 @When("User clicks {string} button")
-public void user_clicks_button(String string) {
+public void user_clicks_button(String string) throws InterruptedException {
 	signinPage.clickOnLogin();
+	Thread.sleep(2000);
 }
 @Then("It should display an error {string} below {string} textbox")
 public void it_should_display_an_error_below_textbox(String errorMsg, String inputField) {
@@ -154,7 +155,9 @@ public void it_should_display_an_error_below_textbox(String errorMsg, String inp
 //    
 //}
 @Then("The user should be redirected to Homepage")
-public void the_user_should_be_redirected_to_homepage() {
+public void the_user_should_be_redirected_to_homepage() throws InterruptedException {
+	Thread.sleep(2000);
+
 	Assert.assertEquals("NumpyNinja",signinPage.getPageTitle());
 
 }

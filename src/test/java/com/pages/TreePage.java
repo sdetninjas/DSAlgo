@@ -9,7 +9,7 @@ public class TreePage extends BasePage {
 	
 	
 
-	@FindBy(xpath="//div[@class='row row-cols-1 row-cols-md-3 g-4']/div[6]//a[@href='tree']")
+	@FindBy(xpath="//*[@href='tree']")
 	private WebElement getStarted;
 	
 	@FindBy(xpath="//a[text()='Overview of Trees']")
@@ -56,7 +56,7 @@ public class TreePage extends BasePage {
 	@FindBy(xpath="//a[text()='Applications of Binary trees']")
 	private WebElement applicationsOfBinaryTreeBtn ;
 	
-	@FindBy(xpath="//a[text()=' Binary search tree']")
+	@FindBy(xpath="//a[text()='Binary Search Trees']")
 	private WebElement binarySearchTree ;
 	
 	@FindBy(xpath="//a[text()='Implementation Of BST']")

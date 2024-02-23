@@ -46,8 +46,8 @@ public abstract class BasePage {
 			
 		}
 		
-		public void getAlertText() {
-			driver.switchTo().alert().getText();
+		public String getAlertText() {
+			return driver.switchTo().alert().getText();
 			
 		}
 		

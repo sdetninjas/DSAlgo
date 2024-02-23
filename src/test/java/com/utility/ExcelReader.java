@@ -29,13 +29,13 @@ public class ExcelReader{
 			String headerInput = headerRow.getCell(0).getStringCellValue();
 			String headerOutput = headerRow.getCell(1).getStringCellValue();
 			XSSFRow testRow = sheet.getRow(rowNumber);
-			String pythonCode = testRow.getCell(0).getStringCellValue();
-			String expectedOutput = testRow.getCell(1).getStringCellValue();
-			//System.out.println("File :" + pythonCode + expectedOutput);
 			
+			String pythonCode = testRow.getCell(0) != null ? testRow.getCell(0).getStringCellValue():"";
+			String expectedOutput = testRow.getCell(1) != null ? testRow.getCell(1).getStringCellValue():"";
 			
-			ioMap.put(headerInput, pythonCode);
-			ioMap.put(headerOutput, expectedOutput);
+						
+				ioMap.put(headerInput, pythonCode);
+				ioMap.put(headerOutput, expectedOutput);
 			
 			
 		} catch (IOException e) {

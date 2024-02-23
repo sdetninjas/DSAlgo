@@ -106,13 +106,13 @@ public class DataStructurePage extends BasePage{
 		// TODO Auto-generated method stub
 
 	}
-	protected void navigateBack() {
+	public void navigateBack() {
 		driver.navigate().back();
 	}
-	protected void getAlertText() {
+	public void getAlertText() {
 		driver.switchTo().alert().getText();
 	}
-	protected void acceptAlertText() {
+	public void acceptAlertText() {
 		driver.switchTo().alert().accept();
 	}
 

@@ -1,6 +1,3 @@
-
-
-@Data-StructuresScenario
 Feature: Testing Data-Structures Introduction features in the DsAlgo Application
 
 @DataStructureIntro 
@@ -25,36 +22,36 @@ Then The user should be redirected to a page having an Python Editor with a url 
 Scenario: User able to see nothing happens the page
 Given The user is on the Python Editor
 When The user clicks the Run Button without entring the code in the Editor
-Then Nothing happens to the page and no error message is displayed
+Then Nothing happens to the page and no error message is displayed1
 
 
 @phythoncodeerrormsg
 Scenario: User should able to see an error message
-Given The user is on the Python Editor
-When The user write the invalid code in Editor
-And Click the Run Button
-Then The user should able to see an error message in alert window
+Given The user is on the Python Editor1
+When The user write the invalid code in Editor1
+And Click the Run Button1
+Then The user should able to see an error message in alert window1
 
 
 @pythoncodeoutput
 Scenario: User should able to see the output 
-Given The user is on the Python Editor
-When The user write the valid code in Editor
-And Click the Run Button
-Then The user should able to see output in the console
+Given The user is on the Python Editor1
+When The user write the valid code in Editor1
+And Click the Run Button1
+Then The user should able to see output in the console1
 
 #
 @practicequestionpage
 Scenario: User redirected to the blank page 
-Given The user is on the Time Complexity Page
-When The user clicks Practice Questions link
-Then The user redirected to the blank page of the practice Questions
+Given The user is on the Time Complexity Page1
+When The user clicks Practice Questions link1
+Then The user redirected to the blank page of the practice Questions1
 #
 @practiceproblem
 Scenario: User doesn't find any practice problem 
-Given The user is on the Time Complexity Page
-When The user clicks Practice Questions link
-Then The user doesn't find any practice problems and the page is blank
+Given The user is on the Time Complexity Page1
+When The user clicks Practice Questions link1
+Then The user doesn't find any practice problems and the page is blank1
 
 
 

@@ -27,27 +27,27 @@ Then The user should be redirected to a page having Editor and run button
 
 @pythonEditorpagewithoutdata
 Scenario: User navigates to the graph console page 
-Given The user is on the python Editor
-When The user clicks the Run Button without entering the code in the Editor
-Then Nothing happens to the page and no error message is displayed
+Given The user is on the python Editor1
+When The user clicks the Run Button without entering the code in the Editor1
+Then Nothing happens to the page and no error message is displayed1
 
 @pythonEditorpagewithvaliddata
 Scenario: User navigates to the graph console page 
-Given The user is on the editor page
-When The user writes the valid python code and click run button
-Then The user is able to see the output inside the console
+Given The user is on the editor page1
+When The user writes the valid python code and click run button1
+Then The user is able to see the output inside the console1
 
 @pythonEditorpagewithinvaliddata
 Scenario: User navigates to the graph console page 
-Given The user is onthe editor page
-When The user writes the invalid python code and click run button
-Then The user see error msg in alert window
+Given The user is onthe editor page1
+When The user writes the invalid python code and click run button1
+Then The user see error msg in alert window1
 
 @pythonEditorpagewithalertmessage
 Scenario: User navigates to the graph console page
-Given The user is on the editor page with Alert Error message
-When The user click the ok button in the alert window
-Then The user is on the same page having Editor and Run button  
+Given The user is on the editor page with Alert Error message1
+When The user click the ok button in the alert window1
+Then The user is on the same page having Editor and Run button1  
 
 
 

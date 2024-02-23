@@ -1,4 +1,4 @@
-package com.pages;
+	package com.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -15,6 +15,7 @@ public abstract class BasePage {
 		protected String BASE_URL=ConfigReader.getProperty("BASE_URL");
 		
 		public BasePage() {
+			
 			driver = DriverManagerFact.getDriver();
 			PageFactory.initElements(driver, this);
 		}
@@ -27,7 +28,7 @@ public abstract class BasePage {
 			
 		}
 		
-		protected void waitFor() {
+		public void waitFor() {
 			waitFor(ConfigReader.getPropertyInt("default_wait_time"));
 			
 		}
@@ -40,16 +41,30 @@ public abstract class BasePage {
 			return we.getAttribute("validationMessage");
 		}
 		
-		protected void waitFor(long milliseconds ) {
+		public void navigateBack() {
+			driver.navigate().back();
+			
+		}
+		
+		public void getAlertText() {
+			driver.switchTo().alert().getText();
+			
+		}
+		
+		public void acceptAlertText() {
+			driver.switchTo().alert().accept();
+			
+		}
+		public void waitFor(long milliseconds ) {
 			try {
 				Thread.sleep(milliseconds);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+			
 				e.printStackTrace();
 				
 			}
 		}
-
+		
 	
 
 }

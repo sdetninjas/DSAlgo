@@ -13,9 +13,9 @@ import io.cucumber.junit.Cucumber;
 	@CucumberOptions(
 			plugin = {"pretty", "html:target/register.html"}, //reporting purpose
 			monochrome=false,  //console output colour
-			tags = "@DataStructureIntro", //tags from feature file
+			tags = "@tag", //tags from feature file
 			features = {"src/test/resources/features"}, //location of feature files
-			glue= "stepdefinition") //location of step definition files
+			glue= {"stepdefinition","com.apphooks"}) //location of step definition files
 
 
 	public class TestRunner extends AbstractTestNGCucumberTests{

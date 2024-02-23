@@ -2,6 +2,7 @@ package com.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HomePage extends BasePage{
@@ -82,9 +83,10 @@ public class HomePage extends BasePage{
 	
 	public void getArrayInnerText(String valueToCheck) {
      	try {
-     		driver.findElement(arraysPage);
-     		System.out.println(driver.findElement(arraysPage).getText().toString());
-         	if(!driver.findElement(arraysPage).getText().toString().equals(valueToCheck)) {
+     		By searchElement = By.xpath("//h4[contains(text(), '"+valueToCheck+"')]");
+     		driver.findElement(searchElement);
+     		System.out.println(driver.findElement(searchElement).getText().toString());
+         	if(!driver.findElement(searchElement).getText().toString().equals(valueToCheck)) {
          		throw new NoSuchElementException("No such element");
          	}
      	} catch (NoSuchElementException ex) {

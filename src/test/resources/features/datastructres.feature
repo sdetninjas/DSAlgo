@@ -43,13 +43,13 @@ When The user write the valid code in Editor
 And Click the Run Button
 Then The user should able to see output in the console
 
-#
+
 @practicequestionpage
 Scenario: User redirected to the blank page 
 Given The user is on the Time Complexity Page
 When The user clicks Practice Questions link
 Then The user redirected to the blank page of the practice Questions
-#
+
 @practiceproblem
 Scenario: User doesn't find any practice problem 
 Given The user is on the Time Complexity Page

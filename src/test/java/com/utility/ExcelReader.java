@@ -10,13 +10,6 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelReader{
 	
-//	public static void main(String arg[]) {
-//		
-//		//getTestData();
-//		
-//		
-//		
-//	}
 
 	public static Map<String, String> getTestData(String sheetName, int rowNumber) {
 		
@@ -25,17 +18,16 @@ public class ExcelReader{
 			XSSFWorkbook workbook = new XSSFWorkbook(ExcelReader.class.getResourceAsStream("/SampleCode.xlsx"));
 			XSSFSheet sheet = workbook.getSheet(sheetName);
 			XSSFRow headerRow = sheet.getRow(0);
-			
-			String headerInput = headerRow.getCell(0).getStringCellValue();
-			String headerOutput = headerRow.getCell(1).getStringCellValue();
 			XSSFRow testRow = sheet.getRow(rowNumber);
+			for(int i=0;i<headerRow.getLastCellNum();i++) {
 			
-			String pythonCode = testRow.getCell(0) != null ? testRow.getCell(0).getStringCellValue():"";
-			String expectedOutput = testRow.getCell(1) != null ? testRow.getCell(1).getStringCellValue():"";
+				String colHeader = headerRow.getCell(i).getStringCellValue();
 			
-						
-				ioMap.put(headerInput, pythonCode);
-				ioMap.put(headerOutput, expectedOutput);
+				String colValue = testRow.getCell(i) != null ? testRow.getCell(i).getStringCellValue():"";
+			
+				ioMap.put(colHeader, colValue);
+			
+			}			
 			
 			
 		} catch (IOException e) {

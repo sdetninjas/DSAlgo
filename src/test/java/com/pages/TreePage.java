@@ -123,7 +123,7 @@ public class TreePage extends BasePage {
 		editor.sendKeys("print 'hello';");
 	}
 	public void enterInvaliPyCode() {
-		editor.sendKeys("Print 'hello';");
+		editor.sendKeys("abcd");
 
 	}
 	public void clickTerminologies() {

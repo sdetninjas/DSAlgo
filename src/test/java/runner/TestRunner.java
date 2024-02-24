@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 			monochrome=false,  //console output colour
 
 
-			//tags = "@tag2", //tags from feature file
+			tags = "@tagTree", //tags from feature file
 			features = {"src/test/resources/features"}, //location of feature files
 			glue= {"stepdefinition","com.apphooks"}) //location of step definition files
 
@@ -21,7 +21,7 @@ import io.cucumber.testng.CucumberOptions;
 	public class TestRunner extends AbstractTestNGCucumberTests{
 		
 		@Override
-	    @DataProvider(parallel = true)
+	    @DataProvider(parallel = false)
 	    public Object[][] scenarios() {
 					
 			return super.scenarios();	

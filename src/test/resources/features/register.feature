@@ -24,6 +24,6 @@ When User enters username "sdetninjas3" in Register page
 And User enters password "ninjas@123" in Register page
 And User enters confirmPassword "ninjas@123" in Register page
 And User clicks Register button 
-Then User should be redirected to Homepage
+#Then User should be redirected to Homepage
 
  

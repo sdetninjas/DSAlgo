@@ -22,7 +22,7 @@ public class ExcelReader{
 		
 		Map<String, String> ioMap = new HashMap<>();
 		try {
-			XSSFWorkbook workbook = new XSSFWorkbook("C:/Febi/NumpyNinja/DS-Algo Project/SampleCode.xlsx");
+			XSSFWorkbook workbook = new XSSFWorkbook(ExcelReader.class.getResourceAsStream("/SampleCode.xlsx"));
 			XSSFSheet sheet = workbook.getSheet(sheetName);
 			XSSFRow headerRow = sheet.getRow(0);
 			

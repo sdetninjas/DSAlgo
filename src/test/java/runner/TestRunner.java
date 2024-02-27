@@ -9,11 +9,12 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class) //Junit execution
 
 	@CucumberOptions(
-			plugin = {"pretty", "html:target/tree.html"}, //reporting purpose
+			plugin = {"pretty", "html:target/tree.html",
+					"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}, //reporting purpose
 			monochrome=false,  //console output colour
 
 
-			tags = "@tagTree", //tags from feature file
+			tags = "@TC_A_001", //tags from feature file
 			features = {"src/test/resources/features"}, //location of feature files
 			glue= {"stepdefinition","com.apphooks"}) //location of step definition files
 

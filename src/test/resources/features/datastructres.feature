@@ -1,6 +1,3 @@
-
-
-@Data-StructuresScenario
 Feature: Testing Data-Structures Introduction features in the DsAlgo Application
 
 @DataStructureIntro 
@@ -21,28 +18,6 @@ Given The user is on the "Time Complexity" paragraph Page of "Data Structures-In
 When The user clicks Try Here  button of "Time Complexity" page
 Then The user should be redirected to a page having an Python Editor with a url "https://dsportalapp.herokuapp.com/tryEditor"
 
-#@pythoncodesamemsg
-#Scenario: User able to see nothing happens the page
-#Given The user is on the Python Editor
-#When The user clicks the Run Button without entring the code in the Editor
-#Then Nothing happens to the page and no error message is displayed
-#
-#
-#@phythoncodeerrormsg
-#Scenario: User should able to see an error message
-#Given The user is on the Python Editor
-#When The user write the invalid code in Editor
-#And Click the Run Button
-#Then The user should able to see an error message in alert window
-#
-#
-#@pythoncodeoutput
-#Scenario: User should able to see the output 
-#Given The user is on the Python Editor
-#When The user write the valid code in Editor
-#And Click the Run Button
-#Then The user should able to see output in the console
-
 #
 @practicequestionpage
 Scenario: User redirected to the blank page 
@@ -56,5 +31,4 @@ Given  The user is on the "Time Complexity" paragraph Page of "Data Structures-I
 When The user clicks "Practice Questions" link of "Data Structures-Introduction"
 Then The user doesn't find any practice problems and the page is blank
 #
-
 

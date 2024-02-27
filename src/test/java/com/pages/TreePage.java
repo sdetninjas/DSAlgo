@@ -6,8 +6,10 @@ import org.openqa.selenium.support.FindBy;
 
 public class TreePage extends BasePage {
 	//private WebDriver driver;
+	
+	
 
-	@FindBy(xpath="//div[@class='row row-cols-1 row-cols-md-3 g-4']/div[6]//a[@href='tree']")
+	@FindBy(xpath="//*[@href='tree']")
 	private WebElement getStarted;
 	
 	@FindBy(xpath="//a[text()='Overview of Trees']")
@@ -16,10 +18,10 @@ public class TreePage extends BasePage {
 	@FindBy(xpath="//a[text()='Try here>>>']")
 	private WebElement tryHere ;
 	
-	@FindBy(xpath="//button[text()='Run']")
-	private WebElement run;
+	@FindBy(xpath="//*[@id='answer_form']/button")
+	private WebElement run; 
 	
-	@FindBy(className="CodeMirror cm-s-default")
+	@FindBy(xpath="//form[@id='answer_form']/div/div/div/textarea")
 	private WebElement editor;
 	
 	@FindBy(xpath="//a[text()='Terminologies']")
@@ -54,6 +56,8 @@ public class TreePage extends BasePage {
 	@FindBy(xpath="//a[text()='Applications of Binary trees']")
 	private WebElement applicationsOfBinaryTreeBtn ;
 	
+	@FindBy(xpath="//a[text()='Binary Search Trees']")
+	private WebElement binarySearchTree ;
 	
 	@FindBy(xpath="//a[text()='Implementation Of BST']")
 	private WebElement implementationOfBstBtn ;
@@ -116,10 +120,10 @@ public class TreePage extends BasePage {
 		editor.click();
 	}
 	public void enterPyCode() {
-		editor.sendKeys("print\"hello\"");
+		editor.sendKeys("print 'hello';");
 	}
 	public void enterInvaliPyCode() {
-		editor.sendKeys("Print\"hello\"");
+		editor.sendKeys("abcd");
 
 	}
 	public void clickTerminologies() {
@@ -153,7 +157,7 @@ public class TreePage extends BasePage {
 		applicationsOfBinaryTreeBtn.click();
 	}
 	public void clickBinarySearchTree() {
-		applicationsOfBinaryTreeBtn.click();
+		binarySearchTree.click();
 	}
 	public void clickImplementatnBST() {
 		implementationOfBstBtn.click();

@@ -8,9 +8,12 @@ import org.openqa.selenium.WebDriver;
 
 import com.drivermanager.DriverManagerFact;
 import com.utility.ConfigReader;
+import com.utility.LoggerLoad;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
+import io.cucumber.java.BeforeStep;
 import io.cucumber.java.Scenario;
 
 public class ApplicationHooks {
@@ -24,11 +27,25 @@ public class ApplicationHooks {
 		prop = ConfigReader.loadProperty();
 	}
 	
+	
 	@Before(order=1)
 	public void launchBrowser() {
 		String browserName = prop.getProperty("browser");
 		driverFactory = new DriverManagerFact();
 		driver = driverFactory.intializeDriver(browserName);
+		
+	}
+	
+	@BeforeStep
+	public void beforeStepLog(Scenario sc) {
+		LoggerLoad.info("Before Step : " + sc.getName() +" " + sc.getLine());
+		
+	}
+	
+	@AfterStep
+	public void afterStepLog(Scenario sc) {
+		LoggerLoad.info("After Step : " + sc.getName() +" " + sc.getLine());
+		//sc.getSourceTagNames().stream().forEach(a -> LoggerLoad.info("SourceTagName " + a));
 		
 	}
 	

@@ -1,19 +1,19 @@
 package runner;
 
 
-import org.junit.runner.RunWith;
 import org.testng.annotations.DataProvider;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
-import io.cucumber.junit.Cucumber;
 	
-@RunWith(Cucumber.class) //Junit execution
+//@RunWith(Cucumber.class) //Junit execution
 
 	@CucumberOptions(
-			plugin = {"pretty", "html:target/register.html"}, //reporting purpose
+			plugin = {"pretty", "html:target/tree.html"}, //reporting purpose
 			monochrome=false,  //console output colour
-			tags = "@tag", //tags from feature file
+
+
+			tags = "@tagTree", //tags from feature file
 			features = {"src/test/resources/features"}, //location of feature files
 			glue= {"stepdefinition","com.apphooks"}) //location of step definition files
 

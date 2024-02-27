@@ -77,7 +77,7 @@ public class DatastructoreStepDefinition {
 		dataPage.findElementWithRoleName("button", "Run");
 	}
 
-	@Given("The user is on the Python Editor")
+	@Given("The user is on the Python Editor1")
 	public void the_user_is_on_the_python_editor() {
 	    // Write code here that turns the phrase above into concrete actions
 		dataPage.loginNow("sdetninjas", "ninjas@123");
@@ -89,55 +89,55 @@ public class DatastructoreStepDefinition {
 	    
 	}
 
-	@When("The user clicks the Run Button without entring the code in the Editor")
+	@When("The user clicks the Run Button without entring the code in the Editor1")
 	public void the_user_clicks_the_run_button_without_entring_the_code_in_the_editor() {
 	    // Write code here that turns the phrase above into concrete actions
 	    dataPage.runClick();
 	}
 
-	@Then("Nothing happens to the page and no error message is displayed")
+	@Then("Nothing happens to the page and no error message is displayed1")
 	public void nothing_happens_to_the_page_and_no_error_message_is_displayed() {
 	    // Write code here that turns the phrase above into concrete actions
 		dataPage.checkNoAlert();
 	}
 
-	@When("The user write the invalid code in Editor")
+	@When("The user write the invalid code in Editor1")
 	public void the_user_write_the_invalid_code_in_editor() {
 	    // Write code here that turns the phrase above into concrete actions
 	   dataPage.enterPythonCode("aaaa");
 	}
 
-	@When("Click the Run Button")
+	@When("Click the Run Button1")
 	public void click_the_run_button() {
 	    // Write code here that turns the phrase above into concrete actions
 		dataPage.runClick();
 	}
 
-	@Then("The user should able to see an error message in alert window")
+	@Then("The user should able to see an error message in alert window1")
 	public void the_user_should_able_to_see_an_error_message_in_alert_window() {
 	    // Write code here that turns the phrase above into concrete actions
 	    dataPage.checkAlertError();
 	}
 
-	@When("The user write the valid code in Editor")
+	@When("The user write the valid code in Editor1")
 	public void the_user_write_the_valid_code_in_editor() {
 	    // Write code here that turns the phrase above into concrete actions
 		   dataPage.enterPythonCode("print(\"Hello world!\")");
 	}
 
-	@Then("The user should able to see output in the console")
+	@Then("The user should able to see output in the console1")
 	public void the_user_should_able_to_see_output_in_the_console() {
 	    // Write code here that turns the phrase above into concrete actions
 	    dataPage.validatePythonResponse();
 	}
 
-	@Given("The user is on the Time Complexity Data Structure Home Page")
+	@Given("The user is on the Time Complexity Data Structure Home Page1")
 	public void the_user_is_on_the_time_complexity_data_structure_home_page() {
 	    // Write code here that turns the phrase above into concrete actions
 	    
 	}
 
-	@When("The user clicks Practice Questions link")
+	@When("The user clicks Practice Questions link1")
 	public void the_user_clicks_practice_questions_link() {
 	    // Write code here that turns the phrase above into concrete actions
 		dataPage.practiceQuestionClick();

@@ -132,13 +132,13 @@ public class DataStructurePage extends BasePage{
 	public void navigateBack() {
 		driver.navigate().back();
 	}
-	public void getAlertText() {
-		driver.switchTo().alert().getText();
+	public String getAlertText() {
+		return driver.switchTo().alert().getText();
 	}
 	public void acceptAlertText() {
 		driver.switchTo().alert().accept();
 	}
-
+	
 	public void loginNow(String userNameValue, String passwordValue) {
 		openPage();
 		waitFor();

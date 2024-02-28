@@ -190,3 +190,141 @@
 [INFO ] 2024-02-26 21:44:37.695 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of QueueApplicationsInQueueParcticeQuestions 85
 [INFO ] 2024-02-26 21:44:37.696 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of QueueApplicationsInQueueParcticeQuestions 85
 [INFO ] 2024-02-26 21:44:37.732 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of QueueApplicationsInQueueParcticeQuestions 85
+[INFO ] 2024-02-27 20:09:46.054 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:09:50.286 [main] LoggerLoad - Info Log After Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:09:50.287 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:09:52.776 [main] LoggerLoad - Info Log After Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:09:52.777 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:09:52.797 [main] LoggerLoad - Info Log After Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:09:54.071 [main] LoggerLoad - Info Log Before Step : User navigates to the graph console page 11
+[INFO ] 2024-02-27 20:09:54.073 [main] LoggerLoad - Info Log After Step : User navigates to the graph console page 11
+[INFO ] 2024-02-27 20:09:54.073 [main] LoggerLoad - Info Log Before Step : User navigates to the graph console page 11
+[INFO ] 2024-02-27 20:09:54.074 [main] LoggerLoad - Info Log After Step : User navigates to the graph console page 11
+[INFO ] 2024-02-27 20:09:54.074 [main] LoggerLoad - Info Log Before Step : User navigates to the graph console page 11
+[INFO ] 2024-02-27 20:09:54.174 [main] LoggerLoad - Info Log After Step : User navigates to the graph console page 11
+[INFO ] 2024-02-27 20:09:55.432 [main] LoggerLoad - Info Log Before Step : User navigates to the graph console page 17
+[INFO ] 2024-02-27 20:09:55.433 [main] LoggerLoad - Info Log After Step : User navigates to the graph console page 17
+[INFO ] 2024-02-27 20:09:55.433 [main] LoggerLoad - Info Log Before Step : User navigates to the graph console page 17
+[INFO ] 2024-02-27 20:09:55.434 [main] LoggerLoad - Info Log After Step : User navigates to the graph console page 17
+[INFO ] 2024-02-27 20:09:55.434 [main] LoggerLoad - Info Log Before Step : User navigates to the graph console page 17
+[INFO ] 2024-02-27 20:09:55.435 [main] LoggerLoad - Info Log After Step : User navigates to the graph console page 17
+[INFO ] 2024-02-27 20:09:56.587 [main] LoggerLoad - Info Log Before Step : User navigates to the graph console page 23
+[INFO ] 2024-02-27 20:09:56.590 [main] LoggerLoad - Info Log After Step : User navigates to the graph console page 23
+[INFO ] 2024-02-27 20:09:56.590 [main] LoggerLoad - Info Log Before Step : User navigates to the graph console page 23
+[INFO ] 2024-02-27 20:09:56.590 [main] LoggerLoad - Info Log After Step : User navigates to the graph console page 23
+[INFO ] 2024-02-27 20:09:56.590 [main] LoggerLoad - Info Log Before Step : User navigates to the graph console page 23
+[INFO ] 2024-02-27 20:09:56.629 [main] LoggerLoad - Info Log After Step : User navigates to the graph console page 23
+[INFO ] 2024-02-27 20:17:42.037 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:17:46.173 [main] LoggerLoad - Info Log After Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:17:46.173 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:17:48.660 [main] LoggerLoad - Info Log After Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:17:48.661 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:17:48.689 [main] LoggerLoad - Info Log After Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:17:49.930 [main] LoggerLoad - Info Log Before Step : User navigates to the graph console page 11
+[INFO ] 2024-02-27 20:17:49.944 [main] LoggerLoad - Info Log After Step : User navigates to the graph console page 11
+[INFO ] 2024-02-27 20:17:51.211 [main] LoggerLoad - Info Log Before Step : User navigates to the graph console page 17
+[INFO ] 2024-02-27 20:17:51.214 [main] LoggerLoad - Info Log After Step : User navigates to the graph console page 17
+[INFO ] 2024-02-27 20:17:52.481 [main] LoggerLoad - Info Log Before Step : User navigates to the graph console page 23
+[INFO ] 2024-02-27 20:17:52.482 [main] LoggerLoad - Info Log After Step : User navigates to the graph console page 23
+[INFO ] 2024-02-27 20:33:26.629 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:33:30.565 [main] LoggerLoad - Info Log After Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:33:30.565 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:33:32.981 [main] LoggerLoad - Info Log After Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:33:32.982 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:33:33.005 [main] LoggerLoad - Info Log After Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:35:27.863 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 12
+[INFO ] 2024-02-27 20:35:34.409 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 12
+[INFO ] 2024-02-27 20:35:34.410 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 12
+[INFO ] 2024-02-27 20:35:34.991 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 12
+[INFO ] 2024-02-27 20:35:34.992 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 12
+[INFO ] 2024-02-27 20:35:35.018 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 12
+[INFO ] 2024-02-27 20:37:50.487 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:37:57.074 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:37:57.074 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:37:57.713 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:37:57.714 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:37:57.741 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:38:15.184 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:38:21.732 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:38:21.733 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:38:22.358 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:38:22.358 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:38:22.393 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:40:08.574 [main] LoggerLoad - Info Log Before Step : User navigates to pythoncode in GraphOperationsInGraph 26
+[INFO ] 2024-02-27 20:40:15.667 [main] LoggerLoad - Info Log After Step : User navigates to pythoncode in GraphOperationsInGraph 26
+[INFO ] 2024-02-27 20:40:15.667 [main] LoggerLoad - Info Log Before Step : User navigates to pythoncode in GraphOperationsInGraph 26
+[INFO ] 2024-02-27 20:40:16.725 [main] LoggerLoad - Info Log After Step : User navigates to pythoncode in GraphOperationsInGraph 26
+[INFO ] 2024-02-27 20:40:16.726 [main] LoggerLoad - Info Log Before Step : User navigates to pythoncode in GraphOperationsInGraph 26
+[INFO ] 2024-02-27 20:40:16.749 [main] LoggerLoad - Info Log After Step : User navigates to pythoncode in GraphOperationsInGraph 26
+[INFO ] 2024-02-27 20:41:43.018 [main] LoggerLoad - Info Log Before Step : User navigates to pythoncode in GraphImplementationsTryme 33
+[INFO ] 2024-02-27 20:41:50.587 [main] LoggerLoad - Info Log After Step : User navigates to pythoncode in GraphImplementationsTryme 33
+[INFO ] 2024-02-27 20:41:50.587 [main] LoggerLoad - Info Log Before Step : User navigates to pythoncode in GraphImplementationsTryme 33
+[INFO ] 2024-02-27 20:41:51.493 [main] LoggerLoad - Info Log After Step : User navigates to pythoncode in GraphImplementationsTryme 33
+[INFO ] 2024-02-27 20:41:51.493 [main] LoggerLoad - Info Log Before Step : User navigates to pythoncode in GraphImplementationsTryme 33
+[INFO ] 2024-02-27 20:41:51.513 [main] LoggerLoad - Info Log After Step : User navigates to pythoncode in GraphImplementationsTryme 33
+[INFO ] 2024-02-27 20:43:04.434 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:11.396 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:11.396 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:11.786 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:11.786 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:11.855 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:23.826 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:30.678 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:30.678 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:31.112 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:31.112 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:31.170 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:43.300 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:50.264 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:50.265 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:50.671 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:50.671 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:43:50.741 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:45:43.235 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphImplementationInGraphParcticeQuestions 48
+[INFO ] 2024-02-27 20:45:50.411 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphImplementationInGraphParcticeQuestions 48
+[INFO ] 2024-02-27 20:45:50.412 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphImplementationInGraphParcticeQuestions 48
+[INFO ] 2024-02-27 20:45:50.866 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphImplementationInGraphParcticeQuestions 48
+[INFO ] 2024-02-27 20:45:50.866 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphImplementationInGraphParcticeQuestions 48
+[INFO ] 2024-02-27 20:45:50.906 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphImplementationInGraphParcticeQuestions 48
+[INFO ] 2024-02-27 20:46:24.491 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:46:28.440 [main] LoggerLoad - Info Log After Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:46:28.441 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:46:30.931 [main] LoggerLoad - Info Log After Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:46:30.933 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:46:30.969 [main] LoggerLoad - Info Log After Step : User navigates to the Graph page 5
+[INFO ] 2024-02-27 20:46:32.207 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 12
+[INFO ] 2024-02-27 20:46:38.881 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 12
+[INFO ] 2024-02-27 20:46:38.881 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 12
+[INFO ] 2024-02-27 20:46:39.372 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 12
+[INFO ] 2024-02-27 20:46:39.373 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 12
+[INFO ] 2024-02-27 20:46:39.393 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 12
+[INFO ] 2024-02-27 20:46:40.589 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:46:47.053 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:46:47.053 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:46:47.640 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:46:47.642 [main] LoggerLoad - Info Log Before Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:46:47.669 [main] LoggerLoad - Info Log After Step : User navigates to the Graph Implementation of Graph in Python page 19
+[INFO ] 2024-02-27 20:46:48.860 [main] LoggerLoad - Info Log Before Step : User navigates to pythoncode in GraphOperationsInGraph 26
+[INFO ] 2024-02-27 20:46:55.773 [main] LoggerLoad - Info Log After Step : User navigates to pythoncode in GraphOperationsInGraph 26
+[INFO ] 2024-02-27 20:46:55.773 [main] LoggerLoad - Info Log Before Step : User navigates to pythoncode in GraphOperationsInGraph 26
+[INFO ] 2024-02-27 20:46:56.665 [main] LoggerLoad - Info Log After Step : User navigates to pythoncode in GraphOperationsInGraph 26
+[INFO ] 2024-02-27 20:46:56.665 [main] LoggerLoad - Info Log Before Step : User navigates to pythoncode in GraphOperationsInGraph 26
+[INFO ] 2024-02-27 20:46:56.680 [main] LoggerLoad - Info Log After Step : User navigates to pythoncode in GraphOperationsInGraph 26
+[INFO ] 2024-02-27 20:46:57.910 [main] LoggerLoad - Info Log Before Step : User navigates to pythoncode in GraphImplementationsTryme 33
+[INFO ] 2024-02-27 20:47:04.871 [main] LoggerLoad - Info Log After Step : User navigates to pythoncode in GraphImplementationsTryme 33
+[INFO ] 2024-02-27 20:47:04.872 [main] LoggerLoad - Info Log Before Step : User navigates to pythoncode in GraphImplementationsTryme 33
+[INFO ] 2024-02-27 20:47:05.710 [main] LoggerLoad - Info Log After Step : User navigates to pythoncode in GraphImplementationsTryme 33
+[INFO ] 2024-02-27 20:47:05.711 [main] LoggerLoad - Info Log Before Step : User navigates to pythoncode in GraphImplementationsTryme 33
+[INFO ] 2024-02-27 20:47:05.733 [main] LoggerLoad - Info Log After Step : User navigates to pythoncode in GraphImplementationsTryme 33
+[INFO ] 2024-02-27 20:47:06.942 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:47:13.924 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:47:13.924 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:47:14.282 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:47:14.283 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:47:14.336 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphOperationsInGraphParcticeQuestions 41
+[INFO ] 2024-02-27 20:47:15.551 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphImplementationInGraphParcticeQuestions 48
+[INFO ] 2024-02-27 20:47:22.696 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphImplementationInGraphParcticeQuestions 48
+[INFO ] 2024-02-27 20:47:22.696 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphImplementationInGraphParcticeQuestions 48
+[INFO ] 2024-02-27 20:47:23.071 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphImplementationInGraphParcticeQuestions 48
+[INFO ] 2024-02-27 20:47:23.071 [main] LoggerLoad - Info Log Before Step : User redirected to the blank page of GraphImplementationInGraphParcticeQuestions 48
+[INFO ] 2024-02-27 20:47:23.112 [main] LoggerLoad - Info Log After Step : User redirected to the blank page of GraphImplementationInGraphParcticeQuestions 48

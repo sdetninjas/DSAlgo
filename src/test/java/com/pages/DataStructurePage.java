@@ -55,6 +55,7 @@ public class DataStructurePage extends BasePage{
 		lookupPage.put("Implementation using collections.deque",  "implementation-collections");
 		lookupPage.put("Implementation using array",  "Implementation-array");
 		lookupPage.put("Practice Questions",  "practice");
+		lookupPage.put("Graph Representations","graph-representations");
 
 	}
 	

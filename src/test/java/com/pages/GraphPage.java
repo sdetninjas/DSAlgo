@@ -19,7 +19,7 @@ public class GraphPage extends BasePage {
 	@Override
 	public void openPage() {
 		// TODO Auto-generated method stub
-		
+		driver.get(BASE_URL + "login");
 	}
 	
 	

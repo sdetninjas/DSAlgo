@@ -1,53 +1,61 @@
 @GraphScenario
 Feature: Testing graph features in the DsAlgo Application
 
-@Graphhomepage
+@Graphhomepage 
 Scenario: User navigates to the Graph page
 Given The user is on the DS Algo Home Page
 When The user clicks  Get Started button below the "Graph"
 Then The user should land in "Graph" page 
 
-@Graphhomepage2 
-Scenario: User navigates to the graph console page 
-Given The user is on the "Graph" page 
-When The user clicks "Graph"link
+
+@GraphInGraph
+Scenario: User navigates to the Graph Implementation of Graph in Python page
+Given The user is on the "Graph" Page
+When The user clicks "Graph" link
 Then The user should be redirected to "Graph" page
 
-@Graphpage 
-Scenario: User navigates to the graph console page 
-Given The user is on the "Graph"page
-When The user clicks "Graph Representation"link
-Then The user should be redirected to "Graph Representation"page
 
-@GraphRepresentation
-Scenario: User navigates to the graph console page 
-Given The user is on the "Graph Representation"page
-When The user clicks "Try Here"button
-Then The user should be redirected to a page having Editor and run button
+@GraphImplementation
+Scenario: User navigates to the Graph Implementation of Graph in Python page
+Given The user is on the "Graph" Page
+When The user clicks "Graph Representations" link
+Then The user should be redirected to "Graph Representations" page
 
-@pythonEditorpagewithoutdata
-Scenario: User navigates to the graph console page 
-Given The user is on the python Editor1
-When The user clicks the Run Button without entering the code in the Editor1
-Then Nothing happens to the page and no error message is displayed1
 
-@pythonEditorpagewithvaliddata
-Scenario: User navigates to the graph console page 
-Given The user is on the editor page1
-When The user writes the valid python code and click run button1
-Then The user is able to see the output inside the console1
+@GraphInGraphTryme
+Scenario: User navigates to pythoncode in GraphOperationsInGraph
+Given The user is on the "Graph" paragraph Page of "Graph"
+When The user clicks Try Here  button of "Graph" page
+Then The user should be redirected to a page having an Python Editor with a url "https://dsportalapp.herokuapp.com/tryEditor"
 
-@pythonEditorpagewithinvaliddata
-Scenario: User navigates to the graph console page 
-Given The user is onthe editor page1
-When The user writes the invalid python code and click run button1
-Then The user see error msg in alert window1
 
-@pythonEditorpagewithalertmessage
-Scenario: User navigates to the graph console page
-Given The user is on the editor page with Alert Error message1
-When The user click the ok button in the alert window1
-Then The user is on the same page having Editor and Run button1  
+@GraphRepresentationsTryme
+Scenario: User navigates to pythoncode in GraphImplementationsTryme
+Given The user is on the "Graph Representations" paragraph Page of "Graph"
+When The user clicks Try Here  button of "Graph Representations" page
+Then The user should be redirected to a page having an Python Editor with a url "https://dsportalapp.herokuapp.com/tryEditor"
+
+
+
+@GraphInGraphPracticeQuestions
+Scenario: User redirected to the blank page of GraphOperationsInGraphParcticeQuestions
+Given The user is on the "Graph" paragraph Page of "Graph"
+When The user clicks "Practice Questions" link of "Graph"
+Then The user redirected to the blank page of the practice Questions
+
+
+@GraphGraphRepresentationsPracticeQuestions
+Scenario:  User redirected to the blank page of GraphImplementationInGraphParcticeQuestions
+Given The user is on the "Graph Representations" paragraph Page of "Graph"
+When The user clicks "Practice Questions" link of "Graph"
+Then The user redirected to the blank page of the practice Questions
+
+
+
+
+
+
+
 
 
 

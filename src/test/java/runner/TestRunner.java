@@ -9,7 +9,11 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class) //Junit execution
 
 	@CucumberOptions(
-			plugin = {"pretty", "html:target/tree.html",
+			plugin = {"pretty", "html:target/cucumber-reports.html",
+					" json:target/cucumber-reports/Cucumber.json ",
+					"junit:targe/cucumber-reports/Cucumber.xml ",
+					"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+					
 					"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}, //reporting purpose
 			monochrome=false,  //console output colour
 

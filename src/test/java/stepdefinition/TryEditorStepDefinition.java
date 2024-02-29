@@ -38,6 +38,7 @@ public class TryEditorStepDefinition {
 	public void user_inputs_data_from_and_and_click_run_button(String sheetname, Integer rownumber) {
 		
 		dataMap = ExcelReader.getTestData(sheetname, rownumber);
+		tryPage.waitFor();
 		tryPage.inputEditor(dataMap.get("Input"));
 		tryPage.runBtn();
 		

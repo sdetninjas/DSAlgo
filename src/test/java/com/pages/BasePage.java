@@ -7,17 +7,19 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.drivermanager.DriverManagerFact;
 import com.utility.ConfigReader;
+import com.utility.LoggerLoad;
 
 public abstract class BasePage {
 	
 	
-		protected static WebDriver driver = DriverManagerFact.getDriver();
+		protected WebDriver driver = DriverManagerFact.getDriver();
 		protected String BASE_URL=ConfigReader.getProperty("BASE_URL");
 		
 		public BasePage() {
 			
-			driver = DriverManagerFact.getDriver();
+			//driver = DriverManagerFact.getDriver();
 			PageFactory.initElements(driver, this);
+			LoggerLoad.info("Creating Object " + this + "for the driver " +  driver);
 		}
 		
 		

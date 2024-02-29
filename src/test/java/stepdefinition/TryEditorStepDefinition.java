@@ -22,6 +22,7 @@ public class TryEditorStepDefinition {
 	
 	@And("The user opens the Try Editor page")
 	public void the_user_opens_the_try_editor_page() {
+		tryPage.waitFor();
 		tryPage.openPage();
 		
 	    
@@ -29,7 +30,7 @@ public class TryEditorStepDefinition {
 
 	@Given("User in Try Editor page")
 	public void user_in_try_editor_page() {
-		
+		tryPage.waitFor();
 		Assert.assertEquals("Assessment",tryPage.getPageTitle());		
 	   
 	}
@@ -40,6 +41,7 @@ public class TryEditorStepDefinition {
 		dataMap = ExcelReader.getTestData(sheetname, rownumber);
 		tryPage.waitFor();
 		tryPage.inputEditor(dataMap.get("Input"));
+		tryPage.waitFor();
 		tryPage.runBtn();
 		
 	}
@@ -54,15 +56,19 @@ public class TryEditorStepDefinition {
 		
 		if (expInput.equals(" ")){
 			
+			tryPage.waitFor();
 			Assert.assertEquals(expOutput, tryPage.getOutput());
 			
 		}else if(expInput=="abcd") {
 			
+			tryPage.waitFor();
 			Assert.assertEquals(expOutput, tryPage.getAlertText());
+			tryPage.waitFor();
 			tryPage.acceptAlertText();
 			
 		}else if(expInput=="print\"hi\"") {
 			
+			tryPage.waitFor();
 			Assert.assertEquals(expOutput, tryPage.getOutput());
 		
 		}

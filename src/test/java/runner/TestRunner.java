@@ -13,11 +13,13 @@ import io.cucumber.testng.CucumberOptions;
 					//"json:target/cucumber-reports/Cucumber.json",
 					//"junit:targe/cucumber-reports/Cucumber.xml",
 					"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-					"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}, //reporting purpose
+					"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
+					"rerun:target/failedtc.txt"}, //reporting purpose
+					
 			monochrome=false,  //console output colour
 
 
-			tags = "@TC_A_001", //tags from feature file
+			//tags = "@TC_A_01", //tags from feature file
 			features = {"src/test/resources/features"}, //location of feature files
 			glue= {"stepdefinition","com.apphooks"}) //location of step definition files
 
@@ -25,7 +27,7 @@ import io.cucumber.testng.CucumberOptions;
 	public class TestRunner extends AbstractTestNGCucumberTests{
 		
 		@Override
-	    @DataProvider(parallel = false)
+	    @DataProvider(parallel = true)
 	    public Object[][] scenarios() {
 					
 			return super.scenarios();	

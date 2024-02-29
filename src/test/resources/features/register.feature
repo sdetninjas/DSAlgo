@@ -17,7 +17,7 @@ Examples:
 	|sdetninjas|password@123|password@|password_mismatch:The two password fields didn’t match.|default|
 
 
-@positiveScenario @TC_R_09
+@positiveScenario @TC_R_02
 Scenario: Register Page with valid Username and Password
 Given User opens Register Page
 When User enters username "sdetninjas3" in Register page

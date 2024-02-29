@@ -1,5 +1,5 @@
 @registerScenarios
-Feature: Login to DS-Algo application Register 
+Feature: Register Page
 
 @negativeScenario @TC_R_01
 Scenario Outline: Register Page with empty values using DT

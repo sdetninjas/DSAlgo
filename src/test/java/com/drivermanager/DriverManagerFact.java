@@ -1,5 +1,7 @@
 package com.drivermanager;
 
+import java.time.Duration;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -34,7 +36,7 @@ public class DriverManagerFact {
 		}
 	getDriver().manage().deleteAllCookies();
 	getDriver().manage().window().maximize();
-	//getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	
 	return getDriver();
 	

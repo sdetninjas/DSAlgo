@@ -1,7 +1,9 @@
 package com.pages;
 
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
@@ -37,6 +39,26 @@ public class DataStructurePage extends BasePage{
 	private By negativeMsg = By.xpath("//*[@id=\"answer_form\"]/div/div/div[6]/div[1]/div/div/div/div[5]/div/pre/span/span[2]");
 	private By practiceQuestionpage = By.xpath("//div[@id='content']");
 
+	public static final Map<String, String> lookupPage = new HashMap<>();
+	
+	static {
+		lookupPage.put("Data Structures-Introduction", "data-structures-introduction");
+		lookupPage.put("Graph", "graph");
+		lookupPage.put("Stack", "stack");
+		lookupPage.put("Queue", "queue");
+		lookupPage.put("Time Complexity", "time-complexity");
+		lookupPage.put("Operations in Stack", "operations-in-stack");
+		lookupPage.put("Implementation", "implementation");
+		lookupPage.put("Applications", "stack-applications");
+		lookupPage.put("Queue Operations",  "QueueOp");
+		lookupPage.put("Implementation of Queue in Python", "implementation-lists");
+		lookupPage.put("Implementation using collections.deque",  "implementation-collections");
+		lookupPage.put("Implementation using array",  "Implementation-array");
+		lookupPage.put("Practice Questions",  "practice");
+		lookupPage.put("Graph Representations","graph-representations");
+
+	}
+	
 	@Override
 	public void openPage() {
 		driver.get(BASE_URL+"login");
@@ -87,8 +109,9 @@ public class DataStructurePage extends BasePage{
 		Assert.assertTrue(txtbx.getText().contains("Hello world!"));
 
 	}
-	public void timeComplexityClick()
+	public void timeComplexityClick(String elementIdentfier)
 	{
+		By timeComplexity = By.xpath("//a[@href='"+elementIdentfier+"']");
 		driver.findElement(timeComplexity).click();
 	}
 
@@ -97,17 +120,26 @@ public class DataStructurePage extends BasePage{
 		driver.findElement(practiceQuestionLink).click();
 	}
 	
-	public void getStartedClick() {
+	public void getStartedClick(String elementIdentfier) {
 		waitFor();
 		waitFor();
+		By getStarted = By.xpath("//a[@href='"+elementIdentfier+"']");
 		driver.findElement(getStarted).click();
 	}
 	public void get(String string) {
 		// TODO Auto-generated method stub
 
 	}
+	public void navigateBack() {
+		driver.navigate().back();
+	}
+	public String getAlertText() {
+		return driver.switchTo().alert().getText();
+	}
+	public void acceptAlertText() {
+		driver.switchTo().alert().accept();
+	}
 	
-
 	public void loginNow(String userNameValue, String passwordValue) {
 		openPage();
 		waitFor();

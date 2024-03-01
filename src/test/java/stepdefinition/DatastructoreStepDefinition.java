@@ -18,10 +18,10 @@ public class DatastructoreStepDefinition {
 		dataPage.loginNow("sdetninjas", "ninjas@123");
 	}
 
-	@When("The user clicks  Get Started button below the Data structures-Introduction")
-	public void the_user_clicks_get_started_button_below_the_data_structures_introduction() {
+	@When("The user clicks  Get Started button below the {string}")
+	public void the_user_clicks_get_started_button_below_the_data_structures_introduction(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-	    dataPage.getStartedClick();
+	    dataPage.getStartedClick(DataStructurePage.lookupPage.get(string));
 	}
 
 	@Then("The user should land in {string} page")
@@ -30,37 +30,43 @@ public class DatastructoreStepDefinition {
 	    dataPage.getStartedPageText("h4", string);
 	}
 
-	@Given("The user is on the Data Structure Introduction Page")
-	public void the_user_is_on_the_data_structure_introduction_page() {
+	@Given("The user is on the {string} Page")
+	public void the_user_is_on_the_data_structure_introduction_page(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 		dataPage.loginNow("sdetninjas", "ninjas@123");
-		dataPage.getStartedClick();
-		dataPage.getStartedPageText("h4", "Data Structures-Introduction");
+		dataPage.getStartedClick(DataStructurePage.lookupPage.get(string));
+		dataPage.getStartedPageText("h4", string);
 	}
 
-	@When("The user clicks Time Complexity link")
-	public void the_user_clicks_time_complexity_link() {
+	@When("The user clicks {string} link")
+	public void the_user_clicks_time_complexity_link(String string) {
 	    // Write code here that turns the phrase above into concrete actions
-	    dataPage.timeComplexityClick();
+	    dataPage.timeComplexityClick(DataStructurePage.lookupPage.get(string));
 	}
 
+	@When("The user clicks {string} link of {string}")
+	public void the_user_clicks_time_complexity_link_of(String string, String string2) {
+	    // Write code here that turns the phrase above into concrete actions
+	    dataPage.timeComplexityClick("/"+DataStructurePage.lookupPage.get(string2)+"/"+DataStructurePage.lookupPage.get(string));
+	}
+	
 	@Then("The user should be redirected to {string} page")
 	public void the_user_should_be_redirected_to_time_complexity_tc_page(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 	    dataPage.findElementWithRoleName("p", string);
 	}
 
-	@Given("The user is on the Time Complexity Page")
-	public void the_user_is_on_the_time_complexity_page() {
+	@Given("The user is on the {string} paragraph Page of {string}")
+	public void the_user_is_on_the_time_complexity_page(String string, String string2) {
 	    // Write code here that turns the phrase above into concrete actions
 		dataPage.loginNow("sdetninjas", "ninjas@123");
-		dataPage.getStartedClick();
-	    dataPage.timeComplexityClick();	 
-	    dataPage.findElementWithRoleName("p", "Time Complexity");
+		dataPage.getStartedClick(DataStructurePage.lookupPage.get(string2));
+	    dataPage.timeComplexityClick(DataStructurePage.lookupPage.get(string));	 
+	    dataPage.findElementWithRoleName("p", string);
 	}
 
-	@When("The user clicks Try Here  button of Time Complexity page")
-	public void the_user_clicks_try_here_button_of_time_complexity_page() {
+	@When("The user clicks Try Here  button of {string} page")
+	public void the_user_clicks_try_here_button_of_time_complexity_page(String string) {
 	    // Write code here that turns the phrase above into concrete actions
 		dataPage.tryHereClick();
 	}
@@ -75,8 +81,8 @@ public class DatastructoreStepDefinition {
 	public void the_user_is_on_the_python_editor() {
 	    // Write code here that turns the phrase above into concrete actions
 		dataPage.loginNow("sdetninjas", "ninjas@123");
-		dataPage.getStartedClick();
-	    dataPage.timeComplexityClick();	 
+		dataPage.getStartedClick("data-structures-introduction");
+	    dataPage.timeComplexityClick("Time Complexity");	 
 	    dataPage.findElementWithRoleName("p", "Time Complexity");
 		dataPage.tryHereClick();
 		dataPage.findElementWithRoleName("button", "Run");
@@ -137,13 +143,13 @@ public class DatastructoreStepDefinition {
 		dataPage.practiceQuestionClick();
 	}
 
-	@Then("The user redirected to the blank page of the practice Questions1")
+	@Then("The user redirected to the blank page of the practice Questions")
 	public void the_user_redirected_to_the_blank_page_of_the_practice_questions() {
 	    // Write code here that turns the phrase above into concrete actions
 	    dataPage.checkBlankPage();
 	}
 
-	@Then("The user doesn't find any practice problems and the page is blank1")
+	@Then("The user doesn't find any practice problems and the page is blank")
 	public void the_user_doesn_t_find_any_practice_problems_and_the_page_is_blank() {
 	    // Write code here that turns the phrase above into concrete actions
 		dataPage.checkBlankPage();

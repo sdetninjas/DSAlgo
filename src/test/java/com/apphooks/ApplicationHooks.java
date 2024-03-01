@@ -18,7 +18,7 @@ import io.cucumber.java.Scenario;
 
 public class ApplicationHooks {
 
-	private  DriverManagerFact driverFactory;
+	//private  DriverManagerFact driverFactory;
 	private WebDriver driver;
 	Properties prop;
 	
@@ -31,9 +31,8 @@ public class ApplicationHooks {
 	@Before(order=1)
 	public void launchBrowser() {
 		String browserName = prop.getProperty("browser");
-		driverFactory = new DriverManagerFact();
-		driver = driverFactory.intializeDriver(browserName);
-		
+		//driverFactory = new DriverManagerFact();
+		driver = DriverManagerFact.intializeDriver(browserName);
 	}
 	
 	@BeforeStep
@@ -58,15 +57,10 @@ public class ApplicationHooks {
 	public void tearDown(Scenario scenario) {
 		
 		if (scenario.isFailed()) {
-			
 			String screenshotName = scenario.getName().replaceAll(" "," _" );
 			byte[] sourcePath = ((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
 			scenario.attach(sourcePath, "image/png", screenshotName);
 		}
-		
-		
-		
-		
 	}
 	
 }

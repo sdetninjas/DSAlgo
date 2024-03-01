@@ -16,6 +16,7 @@ public class ArrayStepDefinition{
 	
 	private ArrayPage arrayPage = new ArrayPage();
 	
+	Map<String,String> ioMap = null;
 	
 	@When("The user clicks a Get Started for Array page")
 	public void the_user_clicks_a_get_started_for_array_page() {
@@ -55,7 +56,7 @@ public class ArrayStepDefinition{
 	}
 
 	
-	@Then("The user should be redirected to a Python Editor")
+	@Then("The user should be redirected to a Try Editor")
 	public void the_user_should_be_redirected_to_a_python_editor() {
 		Assert.assertEquals("Assessment", arrayPage.getPageTitle() );
 	    
@@ -80,26 +81,55 @@ public class ArrayStepDefinition{
 		arrayPage.openAssessmentPage();
 	   
 	}
-
+	
+	
 	@When("The User gives the input from sheetname {string} and {int}")
 	public void the_user_gives_the_input_from_sheetname_and(String sheetname, int rowNum) {
 	    
-		Map<String,String> ioMap = ExcelReader.getTestData(sheetname, rowNum);
-		String code = ioMap.get("Input");
-		String message =  ioMap.get("Output");
+		
+		ioMap = ExcelReader.getTestData(sheetname, rowNum);
+		String expInput = ioMap.get("Input");
+		arrayPage.inputEditor(expInput);
 		
 	}
 
-	@When("The user clicks Run and submit")
-	public void the_user_clicks_run_and_submit() {
-	    // Write code here that turns the phrase above into concrete actions
-	   // throw new io.cucumber.java.PendingException();
+	@When("The user clicks Run button")
+	public void the_user_clicks_run_button() {
+		
+		String type = ioMap.get("Type");
+		String runOutput = ioMap.get("RunOutput");
+		
+		arrayPage.runBtn();
+				 
+		if (type.equals("Empty")){
+			
+			Assert.assertEquals(runOutput, arrayPage.getOutput());
+			
+		}else if(type.equals("Invaild")) {
+			
+			Assert.assertEquals(runOutput, arrayPage.getAlertText());
+			arrayPage.acceptAlertText();
+			
+			
+		}else if(type.equals("Vaild")) {
+			
+			Assert.assertEquals(runOutput, arrayPage.getOutput());
+			
+		
+		}
+	   
 	}
 
-	@Then("Message displyed {string}")
-	public void message_displyed(String string) {
-	    // Write code here that turns the phrase above into concrete actions
-	   // throw new io.cucumber.java.PendingException();
+	@Then("The user should be able to submit")
+	public void The_user_should_be_able_to_submit(){
+		
+		String type = ioMap.get("Type");
+		if (type.equals("Vaild")) {
+			String submitOutput = ioMap.get("SubmitOutput");
+			arrayPage.submitBtn();
+			Assert.assertEquals(submitOutput, arrayPage.getOutput());
+		}
+	   
 	}
 
 

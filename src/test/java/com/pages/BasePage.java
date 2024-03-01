@@ -1,9 +1,13 @@
 	package com.pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.drivermanager.DriverManagerFact;
 import com.utility.ConfigReader;
@@ -17,7 +21,6 @@ public abstract class BasePage {
 		
 		public BasePage() {
 			
-			//driver = DriverManagerFact.getDriver();
 			PageFactory.initElements(driver, this);
 			LoggerLoad.info("Creating Object " + this + "for the driver " +  driver);
 		}
@@ -57,6 +60,15 @@ public abstract class BasePage {
 			driver.switchTo().alert().accept();
 			
 		}
+		public void waitFor(WebElement we) {
+		
+			
+			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+			wait.until(ExpectedConditions.visibilityOf(we));
+			
+		
+		}
+		
 		public void waitFor(long milliseconds ) {
 			try {
 				Thread.sleep(milliseconds);

@@ -60,14 +60,14 @@ public abstract class BasePage {
 			driver.switchTo().alert().accept();
 			
 		}
-		public void waitFor(WebElement we) {
-		
-			
-			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-			wait.until(ExpectedConditions.visibilityOf(we));
-			
-		
-		}
+//		public void waitFor(WebElement we) {
+//		
+//			
+//			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+//			wait.until(ExpectedConditions.elementToBeClickable(we));
+//			
+//		
+//		}
 		
 		public void waitFor(long milliseconds ) {
 			try {

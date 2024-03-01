@@ -23,18 +23,18 @@ public class TryEditorPage extends BasePage{
 	}
 	
 	public void runBtn() {
-		waitFor(run);
+	//	waitFor(run);
 		run.click();
 		
 	}
 	
 	public void inputEditor(String code) {
-		waitFor(editor);
+	//	waitFor(editor);
 		editor.sendKeys(code);
 	}
 	
 	public String getOutput() {
-		waitFor(console);
+	//	waitFor(console);
 		return console.getText();
 	}
 

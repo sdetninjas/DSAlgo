@@ -17,6 +17,7 @@ public class SignInPage extends BasePage{
 	@FindBy(xpath="//input[@value='Login']")
 	private WebElement logInBtn;
 	
+	//@FindBy(className = "alert-primary")
 	@FindBy(className = "alert-primary")
 	private WebElement errorBox;
 	

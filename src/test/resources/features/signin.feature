@@ -16,7 +16,7 @@ Examples:
 	|         |        |Please fill out this field.|Username|
 	|sdetninjas|			|Please fill out this field.|Password|
 	|			|sdetninjas|Please fill out this field.|Username|
-	|		sdet	||Please fill out this field.|default|
+	|sdet|ninja|Invalid Username and Password|default|
 	
 
 

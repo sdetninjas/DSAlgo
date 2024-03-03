@@ -1,11 +1,13 @@
 package com.pages;
 
-import org.openqa.selenium.WebDriver;
+import java.time.Duration;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TreePage extends BasePage {
-	//private WebDriver driver;
 	
 	
 
@@ -80,15 +82,6 @@ public class TreePage extends BasePage {
 	@FindBy(xpath="//input[@value='Login']")
 	private WebElement logInBtn;
 	
-//	public TreePage(WebDriver driver) {
-//		this.driver=driver;
-//	}
-	
-	
-//	public TreePage(WebDriver driver) {
-//		this.driver=driver;
-//		}
-
 
 	@Override
 	public void openPage() {
@@ -116,13 +109,17 @@ public class TreePage extends BasePage {
 	public void clickRun() {
 		run.click();
 	}
-	public void clickEditor() {
+	public void clickEditor() throws InterruptedException {
+		Thread.sleep(1000);
+
 		editor.click();
 	}
-	public void enterPyCode() {
+	public void enterPyCode() throws InterruptedException {
+		Thread.sleep(1000);
 		editor.sendKeys("print 'hello';");
 	}
-	public void enterInvaliPyCode() {
+	public void enterInvaliPyCode() throws InterruptedException {
+		Thread.sleep(1000);
 		editor.sendKeys("abcd");
 
 	}

@@ -1,5 +1,5 @@
 @GraphScenario
-Feature: Testing graph features in the DsAlgo Application
+Feature: Graph Page
 
 @Graphhomepage 
 Scenario: User navigates to the Graph page

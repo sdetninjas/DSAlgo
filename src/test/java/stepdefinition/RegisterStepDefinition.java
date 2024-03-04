@@ -12,7 +12,7 @@ import io.cucumber.java.en.When;
 public class RegisterStepDefinition {
 
 	private RegisterPage registerPage = new RegisterPage(); 
-	//private HomePage homePage = new RegisterPage(); 
+	 
 	
 	@Given("User opens Register Page")
 	public void the_user_opens_register_page() {

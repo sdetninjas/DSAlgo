@@ -20,16 +20,16 @@ public class ArrayStepDefinition{
 	
 	@When("The user clicks a Get Started for Array page")
 	public void the_user_clicks_a_get_started_for_array_page() {
-		LoggerLoad.info("calling the_user_clicks_a_get_started_for_array_page");
+	//	LoggerLoad.info("calling the_user_clicks_a_get_started_for_array_page");
 		arrayPage.clickarrayGetStartedBtn();
-		LoggerLoad.info("completed the_user_clicks_a_get_started_for_array_page");
+	//	LoggerLoad.info("completed the_user_clicks_a_get_started_for_array_page");
 	}
 
 	@Then("The user should be redirected to Array page")
 	public void the_user_should_be_redirected_to_array_page() {
-		LoggerLoad.info("calling The user should be redirected to Array page");
+	//  LoggerLoad.info("calling The user should be redirected to Array page");
 	  Assert.assertEquals("Array", arrayPage.getPageTitle());
-	  LoggerLoad.info("completed The user should be redirected to Array page");
+	//  LoggerLoad.info("completed The user should be redirected to Array page");
 	}
 
 	@Given("The  user is on the Array page")

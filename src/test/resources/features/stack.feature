@@ -1,5 +1,5 @@
 @Stack
-Feature: Testing Stack features in the DsAlgo Application
+Feature: Stack Page
 
 @Stackhomepage
 Scenario: User navigates to the Stack page

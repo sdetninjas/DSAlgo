@@ -1,5 +1,5 @@
 #@homeScenario
-Feature: Testing Home features in the DsAlgo Application
+Feature: Home Page
 
 @Arrays_In_Home @TC_001 @TC_ALL
 Scenario: User navigates to the Array page

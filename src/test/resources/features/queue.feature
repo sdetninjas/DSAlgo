@@ -1,5 +1,5 @@
 @QueueScenario
-Feature: Testing queue features in the DsAlgo Application
+Feature: Queue Page
 
 @Queuehomepage 
 Scenario: User navigates to the Queue page

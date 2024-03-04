@@ -1,4 +1,4 @@
-Feature: Testing Data-Structures Introduction features in the DsAlgo Application
+Feature: Data-Structures Introduction Page
 
 @DataStructureIntro 
 Scenario: User navigates to the Data-Structure Introduction page

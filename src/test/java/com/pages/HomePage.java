@@ -10,7 +10,7 @@ public class HomePage extends BasePage{
 	private By signIn = By.xpath("//a[@href='/login']");
 	private By userName = By.name("username");
 	private By password = By.name("password");
-	private By login = By.xpath("//input[@wfd-id='id4']");
+	private By login = By.xpath("//input[@value='Login']");
 	private By dataStructre = By.xpath("//a[@class='nav-link dropdown-toggle']");
 	private By arrays = By.xpath("//a[contains(text(),'Arrays')]");
 	private By arraysPage = By.xpath("//h4[contains(text(), 'Array')]");

@@ -18,9 +18,19 @@ import io.cucumber.java.Scenario;
 
 public class ApplicationHooks {
 
-	//private  DriverManagerFact driverFactory;
 	private WebDriver driver;
 	Properties prop;
+	
+	private static String browserName;
+	
+	public static void setBrowserName(String browser) {
+		browserName = browser;
+	}
+	
+	public static String getBrowserName(String browser) {
+		
+		return browserName;
+	}
 	
 	@Before(order=0)
 	public void getProperty() {
@@ -30,8 +40,6 @@ public class ApplicationHooks {
 	
 	@Before(order=1)
 	public void launchBrowser() {
-		String browserName = prop.getProperty("browser");
-		//driverFactory = new DriverManagerFact();
 		driver = DriverManagerFact.intializeDriver(browserName);
 	}
 	

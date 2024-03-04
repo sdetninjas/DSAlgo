@@ -16,19 +16,20 @@ public class DriverManagerFact {
 	
 	private static ThreadLocal<WebDriver> localDriver = new ThreadLocal<>();
 	
+	
 	public static WebDriver intializeDriver(String browser) {
 		System.out.println("Browser is : "+ browser);
 		
 		if (browser.equals("chrome")) {
 			WebDriverManager.chromedriver().setup();
 			localDriver.set(new ChromeDriver());
-		} else if (browser.equals("Firefox")) {
+		} else if (browser.equals("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			localDriver.set(new FirefoxDriver());
-		} else if (browser.equals("Safari")) {
+		} else if (browser.equals("safari")) {
 			WebDriverManager.safaridriver().setup();
 			localDriver.set(new SafariDriver());
-		} else if (browser.equals("Edge")) {
+		} else if (browser.equals("edge")) {
 			WebDriverManager.edgedriver().setup();
 			localDriver.set(new EdgeDriver()); 
 		} else {

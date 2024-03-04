@@ -1,7 +1,11 @@
 package runner;
 
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
+
+import com.apphooks.ApplicationHooks;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
@@ -18,7 +22,7 @@ import io.cucumber.testng.CucumberOptions;
 			monochrome=false,  //console output colour
 
 
-		//	tags = "@TC_TE_001", //tags from feature file
+			//tags = "@TC_LL_001", //tags from feature file
 			features = {"src/test/resources/features"}, //location of feature files
 				//features = {"@target/failedtc.txt"},
 			glue= {"stepdefinition","com.apphooks"}) //location of step definition files
@@ -32,6 +36,17 @@ import io.cucumber.testng.CucumberOptions;
 					
 			return super.scenarios();	
 	    }
+		
+		@BeforeTest
+		@Parameters("browser")
+		public void defineBrowser(String browser) throws Throwable {
+			System.out.println("Straring Browser " + browser);
+			ApplicationHooks.setBrowserName(browser);
+
+
+		}
+		
+		
 
 	
 }

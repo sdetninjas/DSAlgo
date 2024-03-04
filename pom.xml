@@ -33,10 +33,10 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.2.5</version>
 				<configuration>
-					<!--<suiteXmlFiles>
+					<suiteXmlFiles>
 		            <suiteXmlFile>testng.xml</suiteXmlFile>
-		            <suiteXmlFile>testng2.xml</suiteXmlFile>
-          			</suiteXmlFiles>-->
+		            <!--<suiteXmlFile>testng2.xml</suiteXmlFile>-->
+          			</suiteXmlFiles>
 				</configuration>
 			</plugin>
 

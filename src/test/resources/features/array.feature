@@ -10,7 +10,7 @@ And The user clicks a Get Started for Array page
 Then The user should be redirected to Array page
 
 @TC_A_001
-Scenario Outline: Array Page
+Scenario Outline: Array Page - Links Test
 
 Given The  user is on the Array page
 When The user clicks the link for "<pagename>" 
@@ -28,14 +28,14 @@ Examples:
 
 
 @TC_A_002
-Scenario: Array - Practice Questions Page
+Scenario: Array Page - Practice Questions Page Test
 
 Given The  user is on the Arrays in Python page
 When The user clicks the link for "Practice Questions"
 Then The user should be redirected to "Practice Questions" Page
 
 @TC_A_003
-Scenario Outline:
+Scenario Outline: Array Page - Assessment Links Test
 
 Given The  user is on the practice page
 When The user clicks the link for "<practicepage>" 
@@ -49,7 +49,7 @@ Examples:
 |Squares of a Sorted Array|
 
 @TC_A_004
-Scenario Outline: Assessment page
+Scenario Outline: Array Page - Assessment Test
 
 Given The  user is on the Assessment page
 When The User gives the input from sheetname "<SheetName>" and <RowNumber> 

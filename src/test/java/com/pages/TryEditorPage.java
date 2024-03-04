@@ -1,7 +1,5 @@
 package com.pages;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -40,20 +38,5 @@ public class TryEditorPage extends BasePage{
 		return console.getText();
 	}
 	
-	public void inputEditor(String code) {
-		
-		WebElement codeMirror = driver.findElement(By.className("CodeMirror"));
-
-		/* getting the first line of code inside codemirror and clicking it to bring it in focus */
-		WebElement codeLine = codeMirror.findElements(By.className("CodeMirror-line")).get(0);
-		codeLine.click();
-
-		/* sending keystokes to textarea once codemirror is in focus */
-		WebElement txtbx = codeMirror.findElement(By.cssSelector("textarea"));
-		txtbx.sendKeys(Keys.CONTROL + "a" + Keys.DELETE);
-		txtbx.sendKeys(code);
-		
-		
-	}
-
+	
 }

@@ -1,11 +1,7 @@
 package com.pages;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TreePage extends BasePage {
 	
@@ -23,8 +19,8 @@ public class TreePage extends BasePage {
 	@FindBy(xpath="//*[@id='answer_form']/button")
 	private WebElement run; 
 	
-	@FindBy(xpath="//form[@id='answer_form']/div/div/div/textarea")
-	private WebElement editor;
+	//@FindBy(xpath="//form[@id='answer_form']/div/div/div/textarea")
+	//private WebElement editor;
 	
 	@FindBy(xpath="//a[text()='Terminologies']")
 	private WebElement terminologiesBtn ;
@@ -112,15 +108,17 @@ public class TreePage extends BasePage {
 	public void clickEditor() throws InterruptedException {
 		Thread.sleep(1000);
 
-		editor.click();
+		//editor.click();
 	}
 	public void enterPyCode() throws InterruptedException {
 		Thread.sleep(1000);
-		editor.sendKeys("print 'hello';");
+		//editor.sendKeys("print 'hello';");
+		inputEditor("print 'hello';");
 	}
 	public void enterInvaliPyCode() throws InterruptedException {
 		Thread.sleep(1000);
-		editor.sendKeys("abcd");
+		inputEditor("abcd");
+		//editor.sendKeys("abcd");
 
 	}
 	public void clickTerminologies() {

@@ -10,7 +10,7 @@ And The user clicks a Get Started for Linked List page
 Then The user should be redirected to Linked List page
 
 @TC_LL_01
-Scenario Outline: Linked List Page
+Scenario Outline: Linked List Page - Links Test
 
 Given The  user is on the Linked List page
 When The user clicks the link for "<pagelink>" Linked List page

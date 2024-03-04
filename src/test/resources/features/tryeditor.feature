@@ -1,5 +1,5 @@
 @tryEditorScenarios
-Feature: Try Editor 
+Feature: Try Editor Page
 
 Background: User is on the login page
 Given The user opens Login Page

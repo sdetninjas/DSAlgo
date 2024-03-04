@@ -19,7 +19,7 @@ import io.cucumber.testng.CucumberOptions;
 			monochrome=false,  //console output colour
 
 
-			//tags = "@TC_A_01", //tags from feature file
+			tags = "@tagTree", //tags from feature file
 			features = {"src/test/resources/features"}, //location of feature files
 			glue= {"stepdefinition","com.apphooks"}) //location of step definition files
 

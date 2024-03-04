@@ -17,7 +17,6 @@ public class SignInPage extends BasePage{
 	@FindBy(xpath="//input[@value='Login']")
 	private WebElement logInBtn;
 	
-	//@FindBy(className = "alert-primary")
 	@FindBy(className = "alert-primary")
 	private WebElement errorBox;
 	
@@ -50,13 +49,7 @@ public class SignInPage extends BasePage{
 	public String getErrorMessage() {
 		return errorBox.getText();
 	}
-//	public void enterLoginCreds(String username, String password) {
-//		userName.sendKeys(username);
-//		passWord.sendKeys(password);
-//		logInBtn.click();
-//
-//		
-//	}
+
 	
 }
 

@@ -9,6 +9,8 @@
 
 	<properties>
 		<allure.version>2.24.0</allure.version>
+    	<maven.compiler.target>1.8</maven.compiler.target>
+    	<maven.compiler.source>1.8</maven.compiler.source>
 	</properties>
 
 	<!-- Add allure-bom to dependency management to ensure correct versions of
